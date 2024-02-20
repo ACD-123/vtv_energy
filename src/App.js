@@ -4,6 +4,7 @@ import "./App.css";
 import { Topbar } from "./components/Navbar/Topbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home } from "./Screens/Home";
+import { Footer } from "./components/Footer/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               element={<Home/>}/>
           </>
       </Routes>
+      <Footer />
     </div>
   );
 }

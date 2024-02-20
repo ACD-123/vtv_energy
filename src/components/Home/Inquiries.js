@@ -79,7 +79,7 @@ export const Inquiries = () => {
         </Form.Group>
         <Form.Group as={Col} md="12" controlId="validationCustom03">
             <Form.Label className='text-white'>Message</Form.Label>
-            <Form.Control as="textarea" placeholder="Message" required />
+            <Form.Control as="textarea" placeholder="Write your message.." cols={30} rows={5} required />
             <Form.Control.Feedback type="invalid">
               Please provide a message.
             </Form.Control.Feedback>
@@ -88,6 +88,7 @@ export const Inquiries = () => {
       <Form.Group className="mb-3">
         <Form.Check
           required
+          style={{color: 'white'}}
           label="Agree to terms and conditions"
           feedback="You must agree before submitting."
           feedbackType="invalid"
@@ -96,7 +97,7 @@ export const Inquiries = () => {
       <Button type="submit">Submit form</Button>
     </Form>
                 </div>
-                <div className='col-lg-6 oursolarwork-right'>
+                <div className='col-lg-6'>
 
                 </div>
             </div>

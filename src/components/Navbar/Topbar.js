@@ -10,7 +10,7 @@ export const Topbar = () => {
  <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-        <img width={200} src={require("../assets/logo/logo.png")} alt="Google" />
+        <img width={200} src={require("../assets/logo/headerLogo.png")} alt="Google" />
 
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
