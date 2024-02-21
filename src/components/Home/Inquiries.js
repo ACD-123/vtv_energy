@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
-
+import { MapContainer, GeoJSON, Tooltip } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import axios from 'axios';
 export const Inquiries = () => {
     const [validated, setValidated] = useState(false);
 
@@ -17,6 +19,36 @@ export const Inquiries = () => {
 
     setValidated(true);
   };
+  const [usStatesData, setUSStatesData] = useState(null);
+  const [hoveredState, setHoveredState] = useState(null);
+
+  useEffect(() => {
+    const fetchUSStatesData = async () => {
+      try {
+        const response = await axios.get(
+          'https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json'
+        );
+        setUSStatesData(response.data.features);
+      } catch (error) {
+        console.error('Error fetching US states data:', error);
+      }
+    };
+
+    fetchUSStatesData();
+  }, []);
+
+  // Event handler for state hover
+  const handleStateHover = (e) => {
+    const { name } = e.target.feature.properties;
+    setHoveredState(name || 'Unknown State');
+  };
+
+  // Event handler for mouseout
+  const handleMouseOut = () => {
+    setHoveredState(null);
+  };
+
+
   return (
     <>
     <section className="InquiriesSection">
@@ -27,9 +59,9 @@ export const Inquiries = () => {
                <h2>For inquiries, Have our sales engineers call you</h2>
                 <p>Kindly fill out the following form</p>
                 </div>
+                <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <div className='row'>
                 <div className='col-lg-6 oursolarworker'>
-                <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom01">
           <Form.Label className='text-white'>First Name</Form.Label>
@@ -84,8 +116,7 @@ export const Inquiries = () => {
               Please provide a message.
             </Form.Control.Feedback>
             </Form.Group>
-      </Row>
-      <Form.Group className="mb-3">
+            <Form.Group className="mb-3" style={{textAlign:'left'}}>
         <Form.Check
           required
           style={{color: 'white'}}
@@ -94,13 +125,53 @@ export const Inquiries = () => {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button type="submit">Submit form</Button>
-    </Form>
+      </Row>
                 </div>
-                <div className='col-lg-6'>
-
+                <div className='col-lg-6' style={{borderLeft:'1px solid white'}}>
+<div className='mapSec'>
+<h3>
+Select Your State
+</h3>
+<div className='map'>
+ <MapContainer
+      center={[37.8, -96]}
+      zoom={4}
+      style={{ height: '500px', width: '100%' }}
+    >
+      {usStatesData &&
+        usStatesData.map((feature) => (
+          <GeoJSON
+            key={feature.id}
+            data={{
+              type: 'FeatureCollection',
+              features: [feature],
+            }}
+            style={(feature) => ({
+              fill: feature.properties.name === hoveredState ? 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)' : 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)',
+              weight: 1,
+              color: 'black',
+              fillOpacity: 0.7,
+            })}
+            onEachFeature={(feature, layer) => {
+              layer.on({
+                mouseover: handleStateHover,
+                mouseout: handleMouseOut,
+              });
+            }}
+          >
+            <Tooltip className='opoppp'>{hoveredState}</Tooltip>
+          </GeoJSON>
+        ))}
+    </MapContainer>
+</div>
+</div>
+      <div style={{textAlign:'end'}}>
+     
+      <Button type="submit" style={{background:'white',color:'black',border:'none',borderRadius:'0px'}}>Submit form</Button>
+      </div>
                 </div>
             </div>
+    </Form>
             </div>
             </div>
         </div>

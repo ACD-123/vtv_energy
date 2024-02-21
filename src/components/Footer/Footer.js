@@ -1,3 +1,4 @@
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, far } from '@fortawesome/free-regular-svg-icons'
 import { faL, fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -37,6 +38,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className='col-lg-3'>
+                    <div className='dert'>
                     <div className='footerContact'>
                         <h2>Contact</h2>
                         {/* <p>Address: 1234 Street Name, City Name, United States</p>
@@ -47,6 +49,13 @@ export const Footer = () => {
                             support@vtvenergy.com
                             </a>
                         </p>
+                    </div>
+                    <div className='socialIcon'>
+                        <a href='#'><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
+                        <a href='#'><FontAwesomeIcon className='icon' icon={faInstagram} /></a>
+                        <a href='#'><FontAwesomeIcon className='icon' icon={faTwitter} /></a>
+
+                    </div>
                     </div>
                 </div>
             </div>

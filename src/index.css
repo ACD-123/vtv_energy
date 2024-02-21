@@ -6,7 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+a {
+  color: white;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -37,7 +39,7 @@ nav.navbar {
 
 .hero-left:hover {
   cursor: pointer;
-  background: repeating-linear-gradient(45deg, black, transparent 100px);
+  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/commercial.gif);  
   border: none !important;
   border-radius: 2px !important;
   display: flex;
@@ -62,7 +64,7 @@ nav.navbar {
 }
 .hero-right:hover {
   cursor: pointer;
-  background: repeating-linear-gradient(45deg, black, transparent 100px);
+  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/residential.gif);  
     border: none !important;
     border-radius: 2px !important;
     display: flex;
@@ -73,6 +75,18 @@ nav.navbar {
     padding-bottom: 22px;
     animation: fadeIn 5s;
     transition-duration: 0.5s;
+}
+img{
+  -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+img:hover {
+  -webkit-transform: scale(1.3) !important;
+  transform: scale(1.1) !important;
+  opacity: 0.7;
 }
 button.px-4.menuButton:hover {
   animation: fadeIn 1s;
@@ -320,9 +334,13 @@ text-align: left;
   background: #1f1f1f;
   background-clip: padding-box;
   border-top-left-radius: 20px;
-  padding: 20px;
+  padding: 26px 47px;
   border-top-right-radius: 20px;
   /* border: solid 8px transparent; */
+}
+.footerLogo p {
+  font-size: 13px;
+  font-weight: 500;
 }
 .full-withradius:before {
   content: "";
@@ -446,4 +464,70 @@ path:hover, circle:hover {
   border-radius: 5px;
   padding: 5px;
   font-family: arial;
+}
+.mapSec h3{
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+text-align: left;
+color: #FCFCFC;
+}
+.mapSec{
+  /* background: #1F1F1F; */
+  padding: 15px 20px;
+}
+path.leaflet-interactive {
+  outline: none;
+}
+path:hover, circle:hover {
+  stroke: #ff4000 !important;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  fill: #ff6f00 !important;
+  cursor: pointer;
+}
+.leaflet-container {
+  border-radius: 20px;
+  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important;
+  outline-offset: 1px;
+}
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+  display: none;
+}
+.leaflet-bottom.leaflet-right {
+  display: none;
+}
+.opoppp{
+  background: #1F1F1F !important;
+  color: white !important;
+}
+.dert{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 158px;
+}
+.dert .socialIcon {
+  display: flex;
+  justify-content: space-around;
+}
+.dert .socialIcon .icon{
+  color: white;
+    padding: 11px;
+    width: 26px;
+    height: 26px;
+    background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important;
+    border-radius: 50%;
+    font-size: 27px;
+}
+.dert .socialIcon .icon path:hover{
+  stroke: #1F1F1F !important;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  fill: #1F1F1F !important;
+  cursor: pointer;
+}
+.dert .socialIcon .icon:hover{
+  background: #fff !important;
+  color: #1F1F1F;
 }
