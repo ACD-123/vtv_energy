@@ -45,7 +45,7 @@ export const Footer = () => {
                         <p>Phone: +123 456 7890</p> */}
                         <p style={{display:'flex',gap:'5px',alignItems:'center',marginBottom:'0px'}}>
                         <img src={require('../assets/images/email.png')} />
-                            <a href='mailto:mubashirodho@gmail.com'> 
+                            <a href='mailto:mubashirodho@gmail.com' style={{color:'white'}}> 
                             support@vtvenergy.com
                             </a>
                         </p>
