@@ -19,8 +19,8 @@ export const Footer = () => {
                 </div>
                 <div className='col-lg-3'>
                     <div className='footerMenu'>
+                            <h4 className='cont'>Useful Links</h4>
                         <ul>
-                            <li><a href='#'>Useful Links</a></li>
                             <li><a href='#'>Home</a></li>
                             <li><a href='#'>Projects</a></li>
                             <li><a href='#'>Solar Energy</a></li>
@@ -29,8 +29,8 @@ export const Footer = () => {
                 </div>
                 <div className='col-lg-3'>
                     <div className='footerMenu'>
+                            <h4 className='cont'>Explore More</h4>
                         <ul>
-                            <li><a href='#'>Explore More</a></li>
                             <li><a href='#'>About Us</a></li>
                             <li><a href='#'>Contact</a></li>
                             <li><a href='#'>FAQs</a></li>
@@ -41,7 +41,7 @@ export const Footer = () => {
                     <div className='dert'>
                     <div className='footerContact footerMenu'>
                     <ul style={{padding:'0px'}}>
-                            <li><a href='#'>Explore More</a></li>
+                    <h4 className='cont'>Contact</h4>
                             </ul>
                         {/* <p>Address: 1234 Street Name, City Name, United States</p>
                         <p>Phone: +123 456 7890</p> */}

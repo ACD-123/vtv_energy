@@ -31,8 +31,8 @@ export const HaveAQuerry = () => {
                 </p>
               </div>
               <Form noValidate validated={validated} onSubmit={handleSubmit} style={{width:'50%'}}>
-              <Row style={{alignItems:'center',borderBottom:'1px solid white', paddingBottom:'9px'}} className="mb-3 name align-items-center">
-                      <Col md={10}>
+              <Row style={{alignItems:'end',borderBottom:'1px solid white', paddingBottom:'9px'}} className="mb-3 name">
+                      <div className="col-lg-10 col-9">
                       <Form.Group
                       className="formbutttontt"
                         controlId="validationCustom01"
@@ -50,12 +50,12 @@ export const HaveAQuerry = () => {
                           Looks good!
                         </Form.Control.Feedback>
                       </Form.Group>
-                        </Col>
-                        <Col md={2}>
+                        </div>
+                        <div className="col-lg-2 col-3">
                         <Button className="btn btn-primary" style={{background:'none', border:'none'}}>
                             <img src={require("../assets/images/Arrow.png")} alt="arrow" />
                             </Button>
-                        </Col>
+                        </div>
 
                     </Row>
               </Form>

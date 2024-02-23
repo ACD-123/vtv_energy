@@ -7,7 +7,7 @@ import { AboutVtv } from '../components/MainHome/AboutVtv'
 import { MeetOurTeam } from '../components/MainHome/MeetOurTeam'
 import { FeatureProjects } from '../components/MainHome/FeatureProjects'
 import { WhyVTVEnergy } from '../components/MainHome/WhyVTVEnergy'
-import { Inquiries } from '../components/Home/Inquiries'
+import { Inquiries } from '../components/ContactSupport/Inquiries'
 
 export const MainHome = () => {
   return (

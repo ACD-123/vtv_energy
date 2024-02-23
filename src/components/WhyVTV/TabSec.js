@@ -27,6 +27,7 @@ export const TabSec = () => {
                 <Tab eventKey="Mission" title="Mission">
                   <div className="box-innertab">
                     <h2 className="text-white text-2xl">Our mission is to demonopolize the energy industry<br/> starting in the United States</h2>
+                    <button className="missionButton">Learn More</button>
                   </div>
                 </Tab>
               </Tabs>

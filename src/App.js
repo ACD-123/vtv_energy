@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer/Footer";
 import { WindEnergy } from "./Screens/WindEnergy";
 import { MainHome } from "./Screens/MainHome";
 import { WhyVtv } from "./Screens/WhyVtv";
+import { Contact } from "./Screens/Contact";
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
             <Route
               path="/Why-VTV"
               element={<WhyVtv/>}/>
+            <Route
+              path="/contact-us"
+              element={<Contact/>}/>
           </>
       </Routes>
       <Footer />

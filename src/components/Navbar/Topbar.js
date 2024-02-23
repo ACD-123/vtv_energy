@@ -23,7 +23,7 @@ export const Topbar = () => {
           <Link to="/solar-energy" className="nav-link">Solar Energy</Link>
             <Link to="/wind-energy" className="nav-link">Wind energy</Link>
             <Link to="Why-VTV" className="nav-link">Why VTV</Link>
-            <Nav.Link href="#pricing"> Contact & Support</Nav.Link>
+            <Link to="/contact-us" className="nav-link"> Contact & Support</Link>
           </Nav>
           <Nav>
             <Button className='px-4 menuButton'>Get A Quote</Button>

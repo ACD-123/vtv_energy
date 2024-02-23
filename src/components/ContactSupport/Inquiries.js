@@ -51,11 +51,11 @@ export const Inquiries = () => {
 
   return (
     <>
-    <section className="InquiriesSection">
+    <section className="InquiriesSectionSupport">
         <div className='container'>
-            <div className='contactUs border-gradient inputBg border-gradient-purple'>
+            <div className='contactUsContact border-gradient inputBg border-gradient-purple'>
                <div>
-                <div className='contactUsTitle'>
+                <div className='contactUsTitleContact'>
                <h2>For inquiries, Have our sales engineers call you</h2>
                 <p>Kindly fill out the following form</p>
                 </div>
