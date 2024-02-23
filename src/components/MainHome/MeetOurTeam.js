@@ -1,0 +1,76 @@
+import { faCodepen, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react'
+
+export const MeetOurTeam = () => {
+  return (
+    <>
+    <section className="aboutVtv">
+        <div className="container engineeringServicesmain">
+          <div className="serviceEn" style={{display:'flex',justifyContent:'center',flexDirection:'column',textAlign:'center',alignItems:'center'}}>
+            <h2 style={{ textAlign: "center" }}>Meet Our Team</h2>
+            <p style={{ textAlign: "center", color: "white", fontSize: "20px" }}>
+            We desire to recognize energy as a fundamental human right.
+            </p>
+          </div>
+          <div class="container">
+  <div class="row">
+  <div className='col-lg-3'>
+  <div class="carddff card0">
+    <div class="borderSEC">
+      <h2>Al Pacino</h2>
+      <div class="icons">
+       <FontAwesomeIcon icon={faCodepen} />
+         <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faFacebook} />
+      </div>
+    </div>
+  </div>
+  </div>
+  <div className='col-lg-3'>
+  <div class="carddff card1">
+    <div class="borderSEC">
+      <h2>Ben Stiller</h2>
+      <div class="icons">
+       <FontAwesomeIcon icon={faCodepen} />
+         <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faFacebook} />
+      </div>
+    </div>
+  </div>
+  </div>
+    <div className='col-lg-3'>
+  <div class="carddff card2">
+    <div class="borderSEC">
+      <h2>Patrick Stewart</h2>
+      <div class="icons">
+       <FontAwesomeIcon icon={faCodepen} />
+         <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faFacebook} />
+      </div>
+    </div>
+  </div>
+  </div>
+    <div className='col-lg-3'>
+  <div class="carddff card2">
+    <div class="borderSEC">
+      <h2>Patrick Stewart</h2>
+      <div class="icons">
+       <FontAwesomeIcon icon={faCodepen} />
+         <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faFacebook} />
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+</div>
+        </div>
+      </section>
+    </>
+  )
+}

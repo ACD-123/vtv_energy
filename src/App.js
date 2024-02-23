@@ -5,6 +5,8 @@ import { Topbar } from "./components/Navbar/Topbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home } from "./Screens/Home";
 import { Footer } from "./components/Footer/Footer";
+import { WindEnergy } from "./Screens/WindEnergy";
+import { MainHome } from "./Screens/MainHome";
 
 
 function App() {
@@ -15,9 +17,17 @@ function App() {
 
       <Routes>
           <>
-            <Route
+          <Route
               path="/"
+              element={<MainHome/>}/>
+
+            <Route
+              path="/solar-energy"
               element={<Home/>}/>
+            
+            <Route
+              path="/wind-energy"
+              element={<WindEnergy/>}/>
           </>
       </Routes>
       <Footer />

@@ -20,7 +20,7 @@ export const Footer = () => {
                 <div className='col-lg-3'>
                     <div className='footerMenu'>
                         <ul>
-                            <li><a href='#'>useful lINKS</a></li>
+                            <li><a href='#'>Useful Links</a></li>
                             <li><a href='#'>Home</a></li>
                             <li><a href='#'>Projects</a></li>
                             <li><a href='#'>Solar Energy</a></li>
@@ -30,7 +30,7 @@ export const Footer = () => {
                 <div className='col-lg-3'>
                     <div className='footerMenu'>
                         <ul>
-                            <li><a href='#'>explore more</a></li>
+                            <li><a href='#'>Explore More</a></li>
                             <li><a href='#'>About Us</a></li>
                             <li><a href='#'>Contact</a></li>
                             <li><a href='#'>FAQs</a></li>
@@ -39,8 +39,10 @@ export const Footer = () => {
                 </div>
                 <div className='col-lg-3'>
                     <div className='dert'>
-                    <div className='footerContact'>
-                        <h2>Contact</h2>
+                    <div className='footerContact footerMenu'>
+                    <ul style={{padding:'0px'}}>
+                            <li><a href='#'>Explore More</a></li>
+                            </ul>
                         {/* <p>Address: 1234 Street Name, City Name, United States</p>
                         <p>Phone: +123 456 7890</p> */}
                         <p style={{display:'flex',gap:'5px',alignItems:'center',marginBottom:'0px'}}>

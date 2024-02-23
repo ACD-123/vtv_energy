@@ -59,6 +59,84 @@ nav.navbar {
   background-size: 100% 100%;
   padding-bottom: 22px;
 }
+.hero-leftMain:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/commercial.gif);  
+  border: none !important;
+    border-radius: 2px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    animation: fadeIn 5s;
+    transition-duration: 0.5s;
+}
+.engineeringServices{
+  padding: 55px 48px;
+  background: #1F1F1F;
+}
+.engineeringServices .serviceEn {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.engineeringServices .serviceEn h2{
+  padding-bottom: 5px;
+  width: fit-content;
+  border-bottom: 2px solid white;
+  font-family: Urbanist;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
+}
+.hero-leftMain{
+  background: url(./components/assets/banner/commercial.gif) no-repeat;
+  border: none !important;
+  border-radius: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100vh;
+  background-size: 100% 100%;
+  padding-bottom: 22px;
+}
+.hero-leftWind:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/WindEnergy.png);  
+  border: none !important;
+  border-radius: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-size: 100% 100%;
+  animation: fadeIn 5s;
+  transition-duration: 0.5s;
+}
+.hero-leftWind .WindText{
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.hero-leftWind{
+  background: url(./components/assets/banner/WindEnergy.png) no-repeat;
+  border: none !important;
+  border-radius: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 500px;
+  background-size: 100% 100%;
+  padding-bottom: 45px;
+}
 .hero-right:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/residential.gif);  
@@ -70,6 +148,18 @@ nav.navbar {
     height: 500px;
     background-size: 100% 100%;
     padding-bottom: 22px;
+    animation: fadeIn 5s;
+    transition-duration: 0.5s;
+}
+.hero-rightMain:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/residential.gif);  
+    border: none !important;
+    border-radius: 2px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
     animation: fadeIn 5s;
     transition-duration: 0.5s;
 }
@@ -112,6 +202,23 @@ button.btnwork:hover {
 .menunav.navbar-nav a.nav-link:hover {
   color: #ff8027;
 }
+button{
+  font-family: Urbanist !important;
+}
+.oursolarwork .oursolarworkfirst .btnwork{
+  background: white;
+  font-family: Urbanist;
+  font-size: 22px;
+  font-weight: 500;
+
+      border: none;
+    border-radius: 3px;
+    padding: 15px 30px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
 .hero-right{
   /* background-size: 100% 100% !important; */
   background: url(./components/assets/banner/residential.gif) no-repeat;
@@ -124,7 +231,28 @@ button.btnwork:hover {
   background-size: 100% 100%;
   padding-bottom: 22px;
 }
-
+.hero-rightMain{
+  /* background-size: 100% 100% !important; */
+  background: url(./components/assets/banner/residential.gif) no-repeat;
+  border: none !important;
+  border-radius: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100vh;
+  background-size: 100% 100%;
+  padding-bottom: 22px;
+}
+.paraBG{
+  font-family: Urbanist;
+  font-weight: 900;
+  /* line-height: 89px; */
+  /* letter-spacing: 0em; */
+  /* text-align: left; */
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .menunav.navbar-nav a.nav-link {
   color: white;
   padding: 15px;
@@ -139,6 +267,61 @@ button.btnwork:hover {
 section.hero{
   background-color: #1F1F1F;
 }
+section.counter{
+  padding: 55px 48px;
+  background-color: #1F1F1F;
+}
+section.featureProjects h2{
+  font-family: Urbanist;
+font-size: 64px;
+font-weight: 900;
+line-height: 86px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+}
+section.featureProjects{
+  padding: 55px 48px;
+  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+}
+section.aboutVtv{
+  padding: 55px 48px;
+  background-color: #1F1F1F;
+}
+section.whyVtv .texter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.whyVtv .texter h2{
+  padding-bottom: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid white;
+  font-family: Urbanist;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.whyVtv .texter p{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+section.whyVtv{
+  padding: 55px 48px;
+  background-color: #1F1F1F;
+}
+
+section.vtvEnergy{
+  padding: 55px 48px;
+  background-color: #1F1F1F;
+}
 .secondSection .secondSectionRight{
   color: white;
   text-align: left;
@@ -151,6 +334,11 @@ section.secondSection{
 section.oursolarwork{
   background: #1F1F1F;
   padding: 55px 48px;
+  color: white;
+}
+section.oursolarworkWind {
+  background: #1F1F1F;
+  padding: 0px 55px 0px;
   color: white;
 }
 .secondSection .secondSectionRight h2{
@@ -174,27 +362,6 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
   
 }
-.oursolarwork-right {
-  transform: translate(-130px, 0px);
-}
-/* .oursolarworkfirst{
-  height: 536px;
-
-} */
-.oursolarwork .btnwork{
-  background-color: #FFFFFF;
-  font-family: Urbanist;
-  font-size: 22px;
-  font-weight: 500;
-
-      border: none;
-    border-radius: 3px;
-    padding: 15px 30px;
-    color: #1F1F1F;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 20px;
-}
 .oursolarwork .oursolarwork-left h2{
   font-family: Urbanist;
 font-size: 45px;
@@ -208,6 +375,74 @@ text-align: left;
   
   font-family: Urbanist;
   font-size: 23px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.oursolarworkWind .oursolarwork-leftWind .formbutttontt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.bordenonr{
+  background: none !important;
+  border: none !important;
+  border-bottom: none;
+  border-radius: 0px !important;
+  color: white !important;
+  font-weight: 900 !important;
+  padding: 0px !important;
+}
+.oursolarworkWind .oursolarwork-leftWind {
+  /* font-size: 40px; */
+  height: 480px;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  padding: 50px 50px 50px 50px;
+  /* border-radius: 7px; */
+  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+}
+.oursolarwork-right {
+  transform: translate(-130px, 0px);
+}
+/* .oursolarworkfirst{
+  height: 536px;
+
+} */
+.oursolarwork .btnwork{
+  background: linear-gradient(99.53deg, #FFE600 -166.03%, #FF3D00 168.83%);
+  font-family: Urbanist;
+  font-size: 22px;
+  font-weight: 500;
+
+      border: none;
+    border-radius: 3px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.oursolarworkWind .oursolarwork-leftWind h2{
+  font-family: Urbanist;
+font-size: 45px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0em;
+/* text-align: left; */
+
+}   
+.oursolarworkWind .oursolarwork-leftWind p{
+  
+  font-family: Urbanist;
+  font-size: 30px;
   font-weight: 500;
   line-height: 33px;
   letter-spacing: 0em;
@@ -393,10 +628,14 @@ color: #FFFFFF;
 .col-lg-6.oursolarworker {
   text-align: left;
 }
-.form-control::-webkit-input-placeholder {
-  color: white;
+.formbutttontt .form-control::-webkit-input-placeholder {
+  color: white !important;
+  font-size: x-large;
 }
-.form-control {
+.form-control::-webkit-input-placeholder {
+  color: white !important;
+}
+.contactUs .form-control {
   background: none !important;
   border: none !important;
   border-bottom: 2px solid #fff !important;
@@ -527,4 +766,391 @@ path:hover, circle:hover {
 .dert .socialIcon .icon:hover{
   background: #fff !important;
   color: #1F1F1F;
+}
+.card{
+  padding: 20px;
+  background: transparent !important;
+  border-color: white !important;
+}
+.card:hover{
+  padding: 20px;
+  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important;
+  border-color: none !important;
+  animation: fadeIn 5s;
+  transition-duration: 0.2s;
+}
+.card .card-body p{
+  color: white;
+}
+.card .card-body h3{
+  color: white;
+  font-weight: 600;
+}
+.card .card-body.cole1 {
+  background-image: linear-gradient(to right, rgb(0 0 0 / 23%), rgb(0 0 0 / 28%)), url(./components/assets/images/card1.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 381px;
+  justify-content: flex-end;
+}
+.card .card-body.cole2 {
+  background-image: linear-gradient(to right, rgb(0 0 0 / 23%), rgb(0 0 0 / 28%)), url(./components/assets/images/cole2.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 381px;
+  justify-content: flex-end;
+}
+.card .card-body.cole3 {
+  background-image: linear-gradient(to right, rgb(0 0 0 / 23%), rgb(0 0 0 / 28%)), url(./components/assets/images/cole3.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 381px;
+  justify-content: flex-end;
+}
+.count-box span:hover {
+  font-family: Urbanist;
+  font-size: 121px;
+  font-weight: 900;
+  /* line-height: 25px; */
+  letter-spacing: 0em;
+  text-align: center;
+  /* border: 1.79px solid; */
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: initial;
+  -webkit-text-stroke-color: #fafdff;
+  animation: fadeIn 2s;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+.count-box span {
+  font-family: Urbanist;
+  font-size: 121px;
+  font-weight: 900;
+  /* line-height: 25px; */
+  letter-spacing: 0em;
+  text-align: center;
+  /* border: 1.79px solid; */
+  background: linear-gradient(135.75deg, #ffffff00 -15.5%, #ff3d0000 106.09%), linear-gradient(12deg, #ffffff00, #ffffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: #ff6900;
+}
+.count-box .hrborder {
+  border: 1px solid #D2D2D2;
+  width: 100%;
+  margin: 0px !important;
+  margin-bottom: 20px !important;
+  opacity: inherit;
+  background: #D2D2D2;
+  z-index: 99;
+  position: relative;
+}
+.count-box p{
+  font-family: Urbanist;
+font-size: 18px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+color: #ffffff;
+}
+section.vtvEnergy .bgvtv{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 23%), rgb(0 0 0 / 28%)), url(./components/assets/banner/VTV_energy.png);
+}
+section.vtvEnergy .bgvtv h2{
+ 
+  font-family: Urbanist;
+  font-size: 80px;
+  font-weight: 900;
+  /* line-height: 25px; */
+  letter-spacing: 0em;
+  text-align: center;
+  /* border: 1.79px solid; */
+  background: linear-gradient(135.75deg, #ffffff00 -15.5%, #ff3d0000 106.09%), linear-gradient(12deg, #ffffff00, #ffffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: #fffcf9;
+}
+section.aboutVtv .engineeringServices .serviceEn {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+section.aboutVtv .engineeringServicesmain .serviceEn h2{
+  padding-bottom: 5px;
+  width: fit-content;
+  border-bottom: 2px solid white;
+  font-family: Urbanist;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
+}
+
+section.aboutVtv .engineeringServicesmain .box-innertab {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+section.aboutVtv .engineeringServicesmain .box-innertab h2 {
+  font-family: Urbanist;
+font-size: 36px;
+font-weight: 900;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+}
+section.aboutVtv .engineeringServicesmain .box-innertab p {
+  font-family: Urbanist;
+font-size: 28px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+}
+.engineeringServicesmain ul.mb-3.nav.nav-tabs .nav-item .nav-link {
+  transition: none;
+  color: #F0F0F038;
+}
+.engineeringServicesmain ul.mb-3.nav.nav-tabs .nav-item .nav-link:hover {
+  color: #F0F0F038;
+  border: none;
+}
+.engineeringServicesmain ul.mb-3.nav.nav-tabs .nav-item .nav-link.active {
+  color: #fff;
+  background: none;
+  border: none;
+}
+.engineeringServicesmain ul.mb-3.nav.nav-tabs {
+  border: none;
+}
+section.aboutVtv .engineeringServicesmain .image-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Set a fixed height for the container */
+  overflow: hidden; /* Hide overflow to keep it within col-lg-6 */
+}
+
+section.aboutVtv .engineeringServicesmain .image-prev, section.aboutVtv .engineeringServicesmain .image-active, section.aboutVtv .engineeringServicesmain .image-next {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+section.aboutVtv .engineeringServicesmain .image-active {
+  transform: translateX(4%);
+  z-index: 0;
+}
+
+section.aboutVtv .engineeringServicesmain .image-next img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+section.aboutVtv .engineeringServicesmain .image-prev {
+  transform: translateX(-2%);
+  z-index: 0;
+}
+
+section.aboutVtv .engineeringServicesmain .image-next {
+  transform: translateX(10%);
+  z-index: 2;
+}
+.card-hover{
+  display: none;
+}
+.carder .card-bodyer:hover .card-hover{
+  display: block;
+}
+.borderSEC {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.borderSEC:hover {
+  border: 1px solid #fff;
+}
+.carddff {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card0:hover {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  opacity: 1;
+}
+.borderSEC:hover h2{
+  color: white;
+}
+.borderSEC h2{
+  color: white;
+}
+.card1 {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card1:hover {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card1:hover .fa {
+  opacity: 1;
+}
+.card2 {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .fa {
+  opacity: 1;
+}
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.featureProjects ul.mb-3.nav.nav-tabs {
+  flex-direction: column;
+  border: none;
+  display: block;
+  width: fit-content;
+}
+.featureProjects .swiper-wrapper{
+  justify-content: center;
+}
+.featureProjects .swiper-button-prev{
+  color: #000;
+}
+.featureProjects ul.mb-3.nav.nav-tabs .nav-item .nav-link {
+  transition: none;
+  color: #000000;
+}
+.featureProjects ul.mb-3.nav.nav-tabs .nav-item .nav-link:hover {
+  color: #f0f0f0;
+  border: none;
+}
+.featureProjects ul.mb-3.nav.nav-tabs .nav-item .nav-link.active {
+  color: #fff;
+  background: #f9ffff59;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 11px 11px;
+}
+section.whyVtv .service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+  flex-direction: column;
+  text-align: left;
+}
+
+section.whyVtv .service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #303ef7;
+}
+
+section.whyVtv .service p {
+  font-size: 16px;
+
+}
+section.whyVtv .service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 19px;
+}
+section.whyVtv .service:hover {
+  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+section.whyVtv .service:hover i {
+  color: #fff;
+}
+section.whyVtv .service#consultation:hover img {
+  content: url('./components/assets/images/messages.png');
+}
+section.whyVtv .service#assessment:hover img {
+  content: url('./components/assets/images/SiteWhite.png');
+}
+section.whyVtv .service#design:hover img {
+  content: url('./components/assets/images/settingsWhite.png');
+}
+section.whyVtv .service#proposal:hover img {
+  content: url('./components/assets/images/ProposalWhite.png');
 }

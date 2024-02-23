@@ -4,13 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 export const Topbar = () => {
   return (
    <>
  <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-        <img width={200} src={require("../assets/logo/headerLogo.png")} alt="Google" />
+        <Link to="/"><img width={200} src={require("../assets/logo/headerLogo.png")} alt="Google" /></Link>
 
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -18,9 +19,9 @@ export const Topbar = () => {
     justifyContent: "space-around"
   }}>
           <Nav className='menunav'>
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">Solar Energy</Nav.Link>
-            <Nav.Link href="#pricing">Wind energy</Nav.Link>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/solar-energy" className="nav-link">Solar Energy</Link>
+            <Link to="/wind-energy" className="nav-link">Wind energy</Link>
             <Nav.Link href="#pricing">Solar Energy</Nav.Link>
             <Nav.Link href="#pricing">Why VTV</Nav.Link>
             <Nav.Link href="#pricing"> Contact & Support</Nav.Link>
