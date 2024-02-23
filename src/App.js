@@ -7,6 +7,7 @@ import { Home } from "./Screens/Home";
 import { Footer } from "./components/Footer/Footer";
 import { WindEnergy } from "./Screens/WindEnergy";
 import { MainHome } from "./Screens/MainHome";
+import { WhyVtv } from "./Screens/WhyVtv";
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
             <Route
               path="/wind-energy"
               element={<WindEnergy/>}/>
+            <Route
+              path="/Why-VTV"
+              element={<WhyVtv/>}/>
           </>
       </Routes>
       <Footer />

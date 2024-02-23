@@ -93,6 +93,24 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;   
 }
+.AboutVtv .serviceEn {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.AboutVtv .serviceEn h2{
+  padding-bottom: 5px;
+  width: fit-content;
+  border-bottom: 2px solid white;
+  font-family: Urbanist;
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
+}
 .hero-leftMain{
   background: url(./components/assets/banner/commercial.gif) no-repeat;
   border: none !important;
@@ -128,6 +146,39 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-leftWind{
   background: url(./components/assets/banner/WindEnergy.png) no-repeat;
+  border: none !important;
+  border-radius: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 500px;
+  background-size: 100% 100%;
+  padding-bottom: 45px;
+}
+.hero-leftWhyVTV:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/why_vtv.png);  
+  border: none !important;
+  border-radius: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-size: 100% 100%;
+  animation: fadeIn 5s;
+  transition-duration: 0.5s;
+}
+.hero-leftWhyVTV .WindText{
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.hero-leftWhyVTV{
+  background: url(./components/assets/banner/why_vtv.png) no-repeat;
   border: none !important;
   border-radius: 2px !important;
   display: flex;
@@ -268,6 +319,33 @@ section.hero{
   background-color: #1F1F1F;
 }
 section.counter{
+  padding: 55px 48px;
+  background-color: #1F1F1F;
+}
+section.AboutVtv{
+  padding: 55px 48px;
+  background-color: #1F1F1F;
+}
+section.TabSec{
+  padding: 55px 48px;
+  background-color: #1F1F1F;
+}
+section.WhyVTVEnergy .EnergyLeft h2{
+  font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section.WhyVTVEnergy .EnergyLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+section.WhyVTVEnergy{
   padding: 55px 48px;
   background-color: #1F1F1F;
 }
@@ -941,6 +1019,25 @@ color: #ffffff;
   color: #fff;
   background: none;
   border: none;
+}
+.TabSec ul.mb-3.nav.nav-tabs{
+  justify-content: center;
+  border: none;
+}
+.TabSec ul.mb-3.nav.nav-tabs .nav-item .nav-link {
+  transition: none;
+  color: #F0F0F038;
+}
+.TabSec ul.mb-3.nav.nav-tabs .nav-item .nav-link:hover {
+  color: #F0F0F038;
+  border: none;
+}
+.TabSec ul.mb-3.nav.nav-tabs .nav-item .nav-link.active {
+  
+  color: #fff;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FF3D00;
 }
 .engineeringServicesmain ul.mb-3.nav.nav-tabs {
   border: none;
