@@ -8,6 +8,7 @@ import { MeetOurTeam } from '../components/MainHome/MeetOurTeam'
 import { FeatureProjects } from '../components/MainHome/FeatureProjects'
 import { WhyVTVEnergy } from '../components/MainHome/WhyVTVEnergy'
 import { Inquiries } from '../components/ContactSupport/Inquiries'
+import {LastSec} from '../components/MainHome/LastSec'
 
 export const MainHome = () => {
   return (
@@ -21,6 +22,7 @@ export const MainHome = () => {
     <FeatureProjects />
     <WhyVTVEnergy />
     <Inquiries />
+    <LastSec />
     </>
   )
 }

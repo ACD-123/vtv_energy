@@ -30,6 +30,7 @@ export const FeatureProjects = () => {
                 slidesPerView: 1,
               },
             }}
+            loop={true}
             modules={[Navigation, Pagination]}
             spaceBetween={0}
             slidesPerView={1}
@@ -92,9 +93,9 @@ export const FeatureProjects = () => {
                 slidesPerView: 1,
               },
             }}
+            loop={true}
+            onRealIndexChange={(swiper) => console.log(swiper.realIndex)}
             modules={[Navigation, Pagination]}
-            spaceBetween={0}
-            slidesPerView={1}
             navigation = {true}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
