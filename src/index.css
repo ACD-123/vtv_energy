@@ -295,19 +295,23 @@ section.last-sec .swiper-slide>div{
 }
 
 
+.hero-left:hover  h2{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
+.hero-left:hover  h1{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
 .hero-left:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/commercial.gif);  
   border: none !important;
   border-radius: 2px !important;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 500px;
   background-size: 100% 100%;
   padding-bottom: 22px;
-  animation: fadeIn 5s;
-  transition-duration: 0.5s;
 }
 .hero-left{
   background: url(./components/assets/banner/commercial.gif) no-repeat;
@@ -320,17 +324,17 @@ section.last-sec .swiper-slide>div{
   background-size: 100% 100%;
   padding-bottom: 22px;
 }
+.hero-leftMain:hover h1{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
 .hero-leftMain:hover {
-  cursor: pointer;
-  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/commercial.gif);  
-  border: none !important;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/commercial.gif);  
+    border: none !important;
     border-radius: 2px !important;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-size: 100% 100%;
-    animation: fadeIn 5s;
-    transition-duration: 0.5s;
 }
 .engineeringServices{
   padding: 55px 48px;
@@ -383,18 +387,22 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   background-size: 100% 100%;
   padding-bottom: 22px;
 }
+.hero-leftWind:hover h2{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
+.hero-leftWind:hover h1{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
 .hero-leftWind:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/WindEnergy.png);  
   border: none !important;
   border-radius: 2px !important;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 500px;
   background-size: 100% 100%;
-  animation: fadeIn 5s;
-  transition-duration: 0.5s;
 }
 .hero-leftWind .WindText{
   font-size: 45px;
@@ -416,18 +424,23 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   background-size: 100% 100%;
   padding-bottom: 45px;
 }
+.hero-leftWhyVTV:hover h2{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
+.hero-leftWhyVTV:hover h1{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
+
 .hero-leftWhyVTV:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/why_vtv.png);  
   border: none !important;
   border-radius: 2px !important;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 500px;
   background-size: 100% 100%;
-  animation: fadeIn 5s;
-  transition-duration: 0.5s;
 }
 .hero-leftWhyVTV .WindText{
   font-size: 45px;
@@ -449,18 +462,22 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   background-size: 100% 100%;
   padding-bottom: 45px;
 }
+.hero-leftContact:hover h1{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
+.hero-leftContact:hover h2{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
 .hero-leftContact:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/contact.png);  
   border: none !important;
   border-radius: 2px !important;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 500px;
   background-size: 100% 100%;
-  animation: fadeIn 5s;
-  transition-duration: 0.5s;
 }
 .hero-leftContact .WindText{
   font-size: 45px;
@@ -482,19 +499,27 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   background-size: 100% 100%;
   padding-bottom: 45px;
 }
+.hero-right:hover h1{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
+.hero-right:hover h2{
+  font-size: 45px;
+  text-decoration: underline !important;
+}
 .hero-right:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/residential.gif);  
     border: none !important;
     border-radius: 2px !important;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 500px;
     background-size: 100% 100%;
     padding-bottom: 22px;
-    animation: fadeIn 5s;
-    transition-duration: 0.5s;
+}
+.hero-rightMain:hover h1{
+  font-size: 45px;
+  text-decoration: underline !important;
 }
 .hero-rightMain:hover {
   cursor: pointer;
@@ -502,11 +527,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
     border: none !important;
     border-radius: 2px !important;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-size: 100% 100%;
-    animation: fadeIn 5s;
-    transition-duration: 0.5s;
 }
 img{
   -webkit-transform: scale(1);
@@ -1224,7 +1245,7 @@ path:hover, circle:hover {
 }
 .card:hover{
   padding: 10px;
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important;
+  /* background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important; */
   border-color: none !important;
   animation: fadeIn 2s;
   transition-duration: 0.2s;
@@ -1278,7 +1299,7 @@ path:hover, circle:hover {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: initial;
   -webkit-text-stroke-color: #fafdff;
-  animation: fadeIn 2s;
+  animation: fadeIn 1s;
   transition-duration: 0.1s;
   cursor: pointer;
 }
@@ -1535,8 +1556,10 @@ section.last-sec h2{
   background-size: 300px;
 }
 .card0:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
-  background-size: 600px;
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center no-repeat;
+  /* background-size: 600px; */
+  animation: fadeIn 2s;
+  transition-duration: 0.2s;
 }
 .card0:hover h2 {
   opacity: 1;
@@ -1555,8 +1578,9 @@ section.last-sec h2{
   background-size: 300px;
 }
 .card1:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
-  background-size: 600px;
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center no-repeat;
+  animation: fadeIn 2s;
+  transition-duration: 0.2s;
 }
 .card1:hover h2 {
   opacity: 1;
@@ -1569,8 +1593,9 @@ section.last-sec h2{
   background-size: 300px;
 }
 .card2:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
-  background-size: 600px;
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center no-repeat;
+  animation: fadeIn 2s;
+  transition-duration: 0.2s;
 }
 .card2:hover h2 {
   opacity: 1;

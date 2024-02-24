@@ -13,7 +13,7 @@ export const OurSolarWork = () => {
             <div className="row align-items-center">
             <div className="col-lg-6 col-md-6 col-sm-12 oursolarwork-left">
                 <div className='oursolarworkfirst'>
-                <h2 className='text-white'>OUR SOLAR WORK</h2>
+                <h2 className='text-white'>Our Solar Power</h2>
                 <p className='text-white px-6'>
                 VTV Energy is <span className='text-black'>Connecticut's #1 choice</span> for residential and commercial solar installations. VTV Solar is a family-owned business, based in Hamden, Connecticut. VTV Solar operates in all 50 states and US territories.
                 </p>

@@ -8,7 +8,7 @@ export const EngineeringServices = () => {
     <div className='container'>
     <div className='serviceEn'>
         <h2>
-        providing top tier engineering services
+        Providing top tier engineering services
         </h2>
         <p style={{textAlign:'left',color:'white',fontSize:'20px'}}>
         VTV Energy offers the latest renewable energy technologies, from solar energy,wind energy to green hydrogen energy through our global partnerships. <br/>

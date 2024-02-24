@@ -14,10 +14,10 @@ export const MainHome = () => {
   return (
     <>
     <Hero />
+    <AboutVtv />
+    <VtvEnergy />
     <EngineeringServices />
     <CounterSec />
-    <VtvEnergy />
-    <AboutVtv />
     <MeetOurTeam  />
     <FeatureProjects />
     <WhyVTVEnergy />
