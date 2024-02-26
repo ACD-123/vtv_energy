@@ -272,6 +272,18 @@ section.map-inquiry .col-lg-12.col-md-6.col-sm-12>div{
 section.last-sec .swiper-slide>div{
   width: auto !important;
 }
+.card .card-body.cole2{
+  height: 340px !important;
+}
+.card .card-body.cole1{
+  height: 340px !important;
+
+}
+section.whyVtv .service{
+  text-align: center !important;
+  justify-content: center;
+  align-items: center;
+}
 }
 /* responsive end */
 .border-footer{
@@ -1265,7 +1277,7 @@ path:hover, circle:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-  height: 381px;
+  height: 540px;
   justify-content: flex-end;
 }
 .card .card-body.cole2 {
@@ -1274,7 +1286,7 @@ path:hover, circle:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-  height: 381px;
+  height: 540px;
   justify-content: flex-end;
 }
 .card .card-body.cole3 {

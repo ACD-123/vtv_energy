@@ -18,7 +18,7 @@ At VTV Energy, we believe in humanity and trust the people who make the most con
         </p>
     </div>
     <div className='row'>
-        <div className='col-lg-4'>
+        <div className='col-lg-6'>
             <div className='card'>
                 <div className='card-body cole1'>
                     <h3>Solar Energy Services</h3>
@@ -29,7 +29,7 @@ At VTV Energy, we believe in humanity and trust the people who make the most con
                 
             </div>
         </div>
-        <div className='col-lg-4'>
+        <div className='col-lg-6'>
             <div className='card'>
                 <div className='card-body cole2'>
                     <h3>Net-zero Carbon Foot Print</h3>
@@ -40,17 +40,7 @@ At VTV Energy, we believe in humanity and trust the people who make the most con
                 
             </div>
         </div>
-        <div className='col-lg-4'>
-            <div className='card'>
-                <div className='card-body cole3'>
-                    <h3>Hydrogen Fuel Cell</h3>
-                    {/* <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                    </p> */}
-                </div>
-                
-            </div>
-        </div>
+       
     </div>
     </div>
    </section>
