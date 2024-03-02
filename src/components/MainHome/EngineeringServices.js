@@ -17,7 +17,7 @@ export const EngineeringServices = () => {
 At VTV Energy, we believe in humanity and trust the people who make the most conscious decisions when selecting the provider that best represents them.
         </p>
     </div>
-    <div className='row'>
+    <div className='row mt-4'>
         <div className='col-lg-6'>
             <div className='card'>
                 <div className='card-body cole1'>

@@ -1564,11 +1564,11 @@ section.last-sec h2{
 
 }
 .card0 {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background: url("./components/assets/images/hassan.png") center center no-repeat;
   background-size: 300px;
 }
 .card0:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center no-repeat;
+  background: url("./components/assets/images/hassan.png") center no-repeat;
   /* background-size: 600px; */
   animation: fadeIn 2s;
   transition-duration: 0.2s;
@@ -1586,11 +1586,11 @@ section.last-sec h2{
   color: white;
 }
 .card1 {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background: url("./components/assets/images/Hamed.png") center center no-repeat;
   background-size: 300px;
 }
 .card1:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center no-repeat;
+  background: url("./components/assets/images/Hamed.png") center no-repeat;
   animation: fadeIn 2s;
   transition-duration: 0.2s;
 }

@@ -18,7 +18,7 @@ export const MeetOurTeam = () => {
   <div className='col-lg-3'>
   <div class="carddff card0">
     <div class="borderSEC">
-      <h2>Al Pacino</h2>
+      <h2>Hassan Saleh</h2>
       <div class="icons">
        <FontAwesomeIcon icon={faCodepen} />
          <FontAwesomeIcon icon={faInstagram} />
@@ -31,7 +31,7 @@ export const MeetOurTeam = () => {
   <div className='col-lg-3'>
   <div class="carddff card1">
     <div class="borderSEC">
-      <h2>Ben Stiller</h2>
+      <h2>Bahaa Hamed</h2>
       <div class="icons">
        <FontAwesomeIcon icon={faCodepen} />
          <FontAwesomeIcon icon={faInstagram} />
@@ -41,7 +41,7 @@ export const MeetOurTeam = () => {
     </div>
   </div>
   </div>
-    <div className='col-lg-3'>
+    {/* <div className='col-lg-3'>
   <div class="carddff card2">
     <div class="borderSEC">
       <h2>Patrick Stewart</h2>
@@ -66,7 +66,7 @@ export const MeetOurTeam = () => {
       </div>
     </div>
   </div>
-  </div>
+  </div> */}
     </div>
 </div>
         </div>
