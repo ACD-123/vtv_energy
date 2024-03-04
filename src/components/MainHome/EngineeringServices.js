@@ -40,7 +40,6 @@ At VTV Energy, we believe in humanity and trust the people who make the most con
                 
             </div>
         </div>
-       
     </div>
     </div>
    </section>

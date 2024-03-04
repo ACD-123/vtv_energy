@@ -19,6 +19,9 @@ nav.navbar {
 
 /* responsive start */
 @media only screen and (max-width: 768px) {
+  .leaflet-container{
+    height: 300px !important;
+  }
   .hero-rightMain{
     height: 50vh !important;
   }
@@ -1504,7 +1507,7 @@ section.aboutVtv .engineeringServicesmain .image-next {
 .borderSEC {
   height: 369px;
   width: 290px;
-  background: transparent;
+  background: linear-gradient(45deg, black, #00000036);
   border-radius: 10px;
   transition: border 1s;
   position: relative;
@@ -1565,7 +1568,7 @@ section.last-sec h2{
 }
 .card0 {
   background: url("./components/assets/images/hassan.png") center center no-repeat;
-  background-size: 300px;
+  /* background-size: 300px; */
 }
 .card0:hover {
   background: url("./components/assets/images/hassan.png") center no-repeat;
@@ -1587,7 +1590,7 @@ section.last-sec h2{
 }
 .card1 {
   background: url("./components/assets/images/Hamed.png") center center no-repeat;
-  background-size: 300px;
+  /* background-size: 300px; */
 }
 .card1:hover {
   background: url("./components/assets/images/Hamed.png") center no-repeat;
@@ -1597,6 +1600,7 @@ section.last-sec h2{
 .card1:hover h2 {
   opacity: 1;
 }
+
 .card1:hover .fa {
   opacity: 1;
 }

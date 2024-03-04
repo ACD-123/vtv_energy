@@ -56,7 +56,6 @@ export const Footer = () => {
                         <a href='#'><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
                         <a href='https://www.instagram.com/vtvenergy/' target="_blank"><FontAwesomeIcon className='icon' icon={faInstagram} /></a>
                         <a href='#'><FontAwesomeIcon className='icon' icon={faTwitter} /></a>
-
                     </div>
                     </div>
                 </div>

@@ -8,17 +8,29 @@ import { MapContainer, GeoJSON, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import axios from 'axios';
 export const Inquiries = () => {
-    const [validated, setValidated] = useState(false);
+  const [validated, setValidated] = useState(false);
+  const [selectedState, setSelectedState] = useState('');
+  const [stateError, setStateError] = useState(false);
+
+  // Event handler for state click
+  const handleStateClick = (e) => {
+    const { name } = e.target.feature.properties;
+    setSelectedState(name || '');
+    setStateError(false); // Reset the state error when the state is selected
+  };
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false) {
+    if (form.checkValidity() === false || selectedState === '') {
       event.preventDefault();
       event.stopPropagation();
+      setValidated(true);
+      setStateError(selectedState === ''); // Set the state error based on the selected state
+    } else {
+      // Handle form submission
     }
-
-    setValidated(true);
   };
+
   const [usStatesData, setUSStatesData] = useState(null);
   const [hoveredState, setHoveredState] = useState(null);
 
@@ -47,7 +59,6 @@ export const Inquiries = () => {
   const handleMouseOut = () => {
     setHoveredState(null);
   };
-
 
   return (
     <>
@@ -133,42 +144,64 @@ export const Inquiries = () => {
 Select Your State
 </h3>
 <div className='map'>
- <MapContainer
-      center={[37.8, -96]}
-      zoom={4}
-      style={{ height: '500px', width: '100%' }}
-    >
-      {usStatesData &&
-        usStatesData.map((feature) => (
-          <GeoJSON
-            key={feature.id}
-            data={{
-              type: 'FeatureCollection',
-              features: [feature],
-            }}
-            style={(feature) => ({
-              fill: feature.properties.name === hoveredState ? 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)' : 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)',
-              weight: 1,
-              color: 'black',
-              fillOpacity: 0.7,
-            })}
-            onEachFeature={(feature, layer) => {
-              layer.on({
-                mouseover: handleStateHover,
-                mouseout: handleMouseOut,
-              });
-            }}
-          >
-            <Tooltip className='opoppp'>{hoveredState}</Tooltip>
-          </GeoJSON>
-        ))}
-    </MapContainer>
-</div>
-</div>
-      <div style={{textAlign:'end'}}>
-     
-      <Button type="submit" style={{background:'white',color:'black',border:'none',borderRadius:'0px'}}>Submit form</Button>
-      </div>
+                        <MapContainer
+                          center={[37.8, -96]}
+                          zoom={4}
+                          style={{ height: '500px', width: '100%' }}
+                        >
+                          {usStatesData &&
+                            usStatesData.map((feature) => (
+                              <GeoJSON
+                                key={feature.id}
+                                data={{
+                                  type: 'FeatureCollection',
+                                  features: [feature],
+                                }}
+                                style={(feature) => ({
+                                  fill: feature.properties.name === hoveredState ? 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)' : 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)',
+                                  weight: 1,
+                                  color: 'black',
+                                  fillOpacity: 0.7,
+                                })}
+                                onEachFeature={(feature, layer) => {
+                                  layer.on({
+                                    mouseover: handleStateHover,
+                                    mouseout: handleMouseOut,
+                                    click: handleStateClick,
+                                  });
+                                }}
+                              >
+                                <Tooltip className='opoppp'>{hoveredState}</Tooltip>
+                              </GeoJSON>
+                            ))}
+                        </MapContainer>
+                      </div>
+                    </div>
+                    <div style={{ textAlign: 'end' }}>
+                      <Form.Group as={Col} md="12" controlId="validationCustom03">
+                        <InputGroup hasValidation>
+                          <Form.Control
+                            type="text"
+                            placeholder="Selected State"
+                            value={selectedState}
+                            readOnly
+                            style={{ marginBottom: '10px' }}
+                            required
+                          />
+                          <Form.Control.Feedback type="invalid">
+                            Please Select State.
+                          </Form.Control.Feedback>
+                        </InputGroup>
+                      </Form.Group>
+
+                      {stateError && (
+                        <div style={{ color: 'red', fontSize: '14px', marginBottom: '10px' }}>
+                          Please select a state.
+                        </div>
+                      )}
+
+                      <Button type="submit" style={{ background: 'white', color: 'black', border: 'none', borderRadius: '0px' }}>Submit form</Button>
+                    </div>
                 </div>
             </div>
     </Form>
