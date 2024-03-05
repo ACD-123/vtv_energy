@@ -21,7 +21,6 @@ export const MeetOurTeam = () => {
       <h2>Hassan Saleh</h2>
       <div class="icons">
        <FontAwesomeIcon icon={faCodepen} />
-         <FontAwesomeIcon icon={faInstagram} />
             <FontAwesomeIcon icon={faInstagram} />
             <FontAwesomeIcon icon={faFacebook} />
       </div>
@@ -34,7 +33,6 @@ export const MeetOurTeam = () => {
       <h2>Bahaa Hamed</h2>
       <div class="icons">
        <FontAwesomeIcon icon={faCodepen} />
-         <FontAwesomeIcon icon={faInstagram} />
             <FontAwesomeIcon icon={faInstagram} />
             <FontAwesomeIcon icon={faFacebook} />
       </div>

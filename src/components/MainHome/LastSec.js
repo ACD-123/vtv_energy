@@ -1,106 +1,44 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export const LastSec = () => {
+  const settings = {
+    // dots: true,
+    NavigationPreloadManager: false,
+    infinite: true,
+    Navigator: false,
+    navigator: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
+
   return (
     <>
-    <section className="last-sec">
-    <div className="container">
-        <h2>
-        @VTVENERGY 
-        </h2>
+      <section className="last-sec">
+        <div className="container">
+          <h2>@VTVENERGY</h2>
         </div>
-        <div className='container-fluid'>
-        <Swiper
-          breakpoints={{
-            576: {
-              width: 576,
-              slidesPerView: 5,
-            },
-            768: {
-              width: 768,
-              slidesPerView: 3,
-            },
-          }}
-          loop={true}
-          modules={[ Pagination, Autoplay]} // Here's the change
-          spaceBetween={0}
-          slidesPerView={1}
-        //   navigation={true}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: false }}
-          autoplay={{ delay: 6500, disableOnInteraction: false }}
-        >
-            <SwiperSlide className="bg-color1">
-              <div >
-               
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/slider1.png")}
-                      alt=""
-                    />
-               
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="bg-color2">
-              <div >
-               
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/slider2.png")}
-                      alt=""
-                    />
-               
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="bg-color3">
-              <div>
-                
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/slider3.png")}
-                      alt=""
-                    />
-                  </div>
-                  
-                
-            </SwiperSlide>
-            <SwiperSlide className="bg-color2">
-              <div >
-               
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/slider4.png")}
-                      alt=""
-                    />
-               
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="bg-color3">
-              <div>
-                
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/slider5.png")}
-                      alt=""
-                    />
-                  </div>
-                  
-                
-            </SwiperSlide>
-          </Swiper>
-        </div>
-    </section>
+        <div className="container-fluid">
+        <Slider {...settings}>
+          <div className='last-sec-img'>
+            <img src={require('../assets/images/slider1.png')} alt='insta1' />
+          </div>
+          <div className='last-sec-img'>
+            <img src={require('../assets/images/slider2.png')} alt='insta2' />
+          </div>
+          <div className='last-sec-img'>
+            <img src={require('../assets/images/slider3.png')} alt='insta3' />
+          </div>
+          <div className='last-sec-img'>
+            <img src={require('../assets/images/slider4.png')} alt='insta4' />
+          </div>
+        </Slider>
+          </div>
+      </section>
     </>
-  )
+  );
 }
