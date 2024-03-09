@@ -35,20 +35,27 @@ nav.navbar {
 }
 /* responsive start */
 @media only screen and (max-width: 768px) {
+  .TabSec .box-innertab {
+    padding: 0px !important;
+  }
   .leaflet-container{
     height: 300px !important;
   }
   .hero-rightMain{
+    border-left: none !important;
     height: 50vh !important;
   }
   .hero-leftMain{
     height: 50vh !important;
+    border-right: none !important;
   }
   .hero-left{
     height: 50vh !important;
+    border-right: none !important;
   }
   .hero-right{
     height: 50vh !important;
+    border-left: none !important;
   }
   button.navbar-toggler{
     border: 1px solid white;
@@ -172,7 +179,6 @@ width: 100% !important;
 }
 .dert .socialIcon {
   display: flex;
-  justify-content: center !important;
   gap: 20px;
 }
 .dert .socialIcon .icon {
@@ -328,11 +334,15 @@ section.whyVtv .service{
 
 .hero-left:hover  h2{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.hero-left:hover  h1{
+.hero-left:hover h1{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-left:hover {
   cursor: pointer;
@@ -346,7 +356,7 @@ section.whyVtv .service{
 }
 .hero-left{
   background: url(./components/assets/banner/commercial.gif) no-repeat;
-  border: none !important;
+  /* border: none !important; */
   border-radius: 2px !important;
   display: flex;
   justify-content: center;
@@ -354,10 +364,13 @@ section.whyVtv .service{
   height: 500px;
   background-size: 100% 100%;
   padding-bottom: 22px;
+  border-right: 2px solid #f75102 ;
 }
 .hero-leftMain:hover h1{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-leftMain:hover {
     cursor: pointer;
@@ -409,7 +422,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-leftMain{
   background: url(./components/assets/banner/commercial.gif) no-repeat;
-  border: none !important;
+  /* border: none !important; */
   border-radius: 2px !important;
   display: flex;
   justify-content: center;
@@ -417,14 +430,19 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   height: 100vh;
   background-size: 100% 100%;
   padding-bottom: 22px;
+  border-right: 2px solid #f75102;
 }
 .hero-leftWind:hover h2{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-leftWind:hover h1{
   font-size: 45px;
-  text-decoration: underline !important;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero-leftWind:hover {
   cursor: pointer;
@@ -457,11 +475,15 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-leftWhyVTV:hover h2{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-leftWhyVTV:hover h1{
   font-size: 45px;
-  text-decoration: underline !important;
+  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-leftWhyVTV:hover {
@@ -495,11 +517,15 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-leftContact:hover h1{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-leftContact:hover h2{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-leftContact:hover {
   cursor: pointer;
@@ -532,11 +558,15 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-right:hover h1{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-right:hover h2{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero-right:hover {
   cursor: pointer;
@@ -550,7 +580,27 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-rightMain:hover h1{
   font-size: 45px;
-  text-decoration: underline !important;
+    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box-innertab p {
+  color: white;
+}
+.TabSec .box-innertab {
+  padding: 0px 156px;
+}
+.hero-leftMain:hover .paraBG {
+  color: white;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
+}
+.hero-rightMain:hover .paraBG {
+  color: white;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white;
 }
 .hero-rightMain:hover {
   cursor: pointer;
@@ -619,7 +669,7 @@ button{
 .hero-right{
   /* background-size: 100% 100% !important; */
   background: url(./components/assets/banner/residential.gif) no-repeat;
-  border: none !important;
+  /* border: none !important; */
   border-radius: 2px !important;
   display: flex;
   justify-content: center;
@@ -627,11 +677,12 @@ button{
   height: 500px;
   background-size: 100% 100%;
   padding-bottom: 22px;
+  border-left: 2px solid #f75102;
 }
 .hero-rightMain{
   /* background-size: 100% 100% !important; */
   background: url(./components/assets/banner/residential.gif) no-repeat;
-  border: none !important;
+  /* border: none !important; */
   border-radius: 2px !important;
   display: flex;
   justify-content: center;
@@ -639,6 +690,7 @@ button{
   height: 100vh;
   background-size: 100% 100%;
   padding-bottom: 22px;
+  border-left: 2px solid #f75102;
 }
 .paraBG{
   font-family: "Urbanist", sans-serif;
@@ -652,7 +704,7 @@ button{
 }
 .menunav.navbar-nav a.nav-link {
   color: white;
-  padding: 15px;
+  padding: 13px;
   font-size: 18px;
 }
 @media only screen and (max-width: 768px) {
@@ -810,6 +862,10 @@ text-align: left;
   text-align: left;
   
 }
+.oursolarworkWind .oursolarworkfirst{
+  margin-bottom: 36px;
+
+}
 .oursolarworkWind .oursolarwork-leftWind .formbutttontt {
   display: flex;
   flex-direction: column;
@@ -825,9 +881,12 @@ text-align: left;
   font-weight: 900 !important;
   padding: 0px !important;
 }
+.col-lg-12.col-md-12.col-sm-12.hero-leftWind .herofirst p {
+  font-size: 20px !important;
+}
 .oursolarworkWind .oursolarwork-leftWind {
   /* font-size: 40px; */
-  height: 480px;
+  height: 380px;
   flex-direction: column;
   text-align: center;
   display: flex;
@@ -1223,11 +1282,15 @@ path:hover, circle:hover {
   stroke-width: 1;
   stroke-linecap: round;
   stroke-linejoin: round;
-  fill: #303030;
+  /* fill: #303030; */
   position: relative;
   z-index: 999;
   opacity: revert-layer;
   background: none;
+}
+.engineeringServices a {
+  color: aliceblue;
+  text-decoration: auto;
 }
 .leaflet-control-zoom.leaflet-bar.leaflet-control {
   display: none;
@@ -1247,7 +1310,8 @@ path:hover, circle:hover {
 }
 .dert .socialIcon {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 12px;
 }
 .dert .socialIcon .icon{
   color: white;

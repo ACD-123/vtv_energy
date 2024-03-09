@@ -9,7 +9,8 @@ export const AboutVtv = () => {
           <div className="serviceEn">
             <h2>About VTV ENERGY</h2>
             <p style={{ textAlign: "left", color: "white", fontSize: "20px" }}>
-            At VTV Energy, we believe in humanity and trust the people who make the most conscious decisions when selecting the provider that best represents them.
+            At VTV Energy, we offer the highest quality solar installations at the best pricing in the market
+guaranteed.
             </p>
           </div>
             <div className='col-lg-12'>

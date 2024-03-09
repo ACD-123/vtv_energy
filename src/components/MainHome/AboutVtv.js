@@ -46,9 +46,8 @@ export const AboutVtv = () => {
           <div className="serviceEn">
             <h2>About VTV ENERGY</h2>
             <p style={{ textAlign: "left", color: "white", fontSize: "20px" }}>
-              At VTV Energy, we believe in humanity and trust the people who
-              make the most conscious decisions when selecting the provider that
-              best represents them.
+            At VTV Energy, we offer the highest quality solar installations at the best pricing in the market
+guaranteed.
             </p>
           </div>
           <div className="row">
@@ -65,19 +64,26 @@ export const AboutVtv = () => {
                 <Tab eventKey="home" title="Values">
                   <div className="box-innertab">
                     <h2 className="text-white text-2xl">Values</h2>
+                    <p>
+                    We operate with Honesty, Integrity, Transparency, and Compassion.
+                    </p>
                   </div>
                 </Tab>
                 <Tab eventKey="profile" title="Vision">
                   <div className="box-innertab">
                     <h2 className="text-white text-2xl">Vision</h2>
+                    <p>
+                    We envision large-scale energy operations for commercial, residential, and utilities paving the way to
+excess renewable energy to fuel us.
+                    </p>
                   </div>
                 </Tab>
                 <Tab eventKey="contact" title="Mission">
                   <div className="box-innertab">
                     <h2 className="text-white text-2xl">Our Mission</h2>
                     <p>
-                      Our mission is to demonopolize the energy industry
-                      starting in the United States
+                    Our mission is to provide as much renewable energy as possible with the highest technology at the
+lowest price possible in an effort to bring down energy prices across the United States.
                     </p>
                   </div>
                 </Tab>

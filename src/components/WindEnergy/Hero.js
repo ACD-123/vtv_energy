@@ -7,9 +7,9 @@ export const Hero = () => {
       <div className="row">
         <div className="col-lg-12 col-md-12 col-sm-12 hero-leftWind">
           <div className='herofirst'>
-            <h2 className='WindText'>Providing top tier engineering services</h2>
+            <h2 className='WindText'>Providing Top Tier Engineering Services</h2>
             <p className='text-white px-6'>
-            VTV Energy offers the latest renewable energy technologies, from solar energy, wind energy to green <br/>hydrogen energy through our global partnerships.
+            We provide on-shore and off-shore wind turbine installations.
             </p>
             {/* <button className="btn btn-primary">Get A Quote</button> */}
           </div>

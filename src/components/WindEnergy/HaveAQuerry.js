@@ -25,10 +25,10 @@ export const HaveAQuerry = () => {
           <div className="row align-items-center">
             <div className="col-lg-12 col-md-12 col-sm-12 oursolarwork-leftWind">
               <div className="oursolarworkfirst">
-                <h2 className="text-white">Have a Querry?</h2>
-                <p className="text-white px-6">
-                  Drop your email & our engineers will reach out to you
-                </p>
+                <h2 className="text-white">Contact us for your inquiry</h2>
+                {/* <p className="text-white px-6">
+                Contact us for your inquiry
+                </p> */}
               </div>
               <Form noValidate validated={validated} onSubmit={handleSubmit} style={{width:'50%'}}>
               <Row style={{alignItems:'end',borderBottom:'1px solid white', paddingBottom:'9px'}} className="mb-3 name">

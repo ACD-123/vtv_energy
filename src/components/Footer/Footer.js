@@ -14,7 +14,7 @@ export const Footer = () => {
                 <div className='col-lg-3'>
                     <div className='footerLogo'>
                         <img width='200px' src={require('../assets/logo/logo.png')} alt='logo' />
-                        <p>Our paper is sourced from FSC-certified mills. We plant enough trees to more than double our paper usage.</p>
+                        <p>VTV Energy For the People.</p>
                     </div>
                 </div>
                 <div className='col-lg-3'>
@@ -47,15 +47,15 @@ export const Footer = () => {
                         <p>Phone: +123 456 7890</p> */}
                         <p style={{display:'flex',gap:'5px',alignItems:'center',marginBottom:'0px'}}>
                         <img src={require('../assets/images/email.png')} />
-                            <a href='mailto:mubashirodho@gmail.com' style={{color:'white'}}> 
-                            support@vtvenergy.com
+                            <a href='mailto:info@vtvenergy.com' style={{color:'white'}}> 
+                            info@vtvenergy.com
                             </a>
                         </p>
                     </div>
                     <div className='socialIcon'>
                         <a href='#'><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
                         <a href='https://www.instagram.com/vtvenergy/' target="_blank"><FontAwesomeIcon className='icon' icon={faInstagram} /></a>
-                        <a href='#'><FontAwesomeIcon className='icon' icon={faTwitter} /></a>
+                        {/* <a href='#'><FontAwesomeIcon className='icon' icon={faTwitter} /></a> */}
                     </div>
                     </div>
                 </div>

@@ -9,27 +9,21 @@ import "leaflet/dist/leaflet.css";
 import axios from "axios";
 export const Inquiries = () => {
   const [validated, setValidated] = useState(false);
-  const [selectedState, setSelectedState] = useState("");
+  const [selectedState, setSelectedState] = useState('');
   const [stateError, setStateError] = useState(false);
-
-  // Event handler for state click
-  const handleStateClick = (e) => {
-    const { name } = e.target.feature.properties;
-    setSelectedState(name || "");
-    setStateError(false); // Reset the state error when the state is selected
-  };
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
-    if (form.checkValidity() === false || selectedState === "") {
+    if (form.checkValidity() === false || selectedState === '') {
       event.preventDefault();
       event.stopPropagation();
       setValidated(true);
-      setStateError(selectedState === ""); // Set the state error based on the selected state
+      setStateError(selectedState === ''); // Set the state error based on the selected state
     } else {
       // Handle form submission
     }
   };
+
   const [usStatesData, setUSStatesData] = useState(null);
   const [hoveredState, setHoveredState] = useState(null);
 
@@ -37,21 +31,41 @@ export const Inquiries = () => {
     const fetchUSStatesData = async () => {
       try {
         const response = await axios.get(
-          "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json"
+          'https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json'
         );
         setUSStatesData(response.data.features);
       } catch (error) {
-        console.error("Error fetching US states data:", error);
+        console.error('Error fetching US states data:', error);
       }
     };
 
     fetchUSStatesData();
   }, []);
 
+  // List of allowed states
+  const allowedStates = ['Massachusetts', 'Colorado', 'California'];
+
+  // Event handler for state click
+  const handleStateClick = (e) => {
+    const { name } = e.target.feature.properties;
+
+    // Check if the clicked state is allowed
+    if (allowedStates.includes(name)) {
+      setSelectedState(name || '');
+      setStateError(false); // Reset the state error when the state is selected
+    } else {
+      // If the state is not allowed, show a popup or set an error state
+      // You can implement your own logic here (e.g., show a modal, set an error state)
+      alert(`Sorry, inquiries are not available for ${name}`);
+      setSelectedState('');
+      setStateError(true);
+    }
+  };
+
   // Event handler for state hover
   const handleStateHover = (e) => {
     const { name } = e.target.feature.properties;
-    setHoveredState(name || "Unknown State");
+    setHoveredState(name || 'Unknown State');
   };
 
   // Event handler for mouseout
@@ -178,42 +192,37 @@ export const Inquiries = () => {
                     <div className="mapSec">
                       <h3>Select Your State</h3>
                       <div className="map">
-                        <MapContainer
-                          center={[37.8, -96]}
-                          zoom={4}
-                          style={{ height: "500px", width: "100%" }}
-                        >
-                          {usStatesData &&
-                            usStatesData.map((feature) => (
-                              <GeoJSON
-                                key={feature.id}
-                                data={{
-                                  type: "FeatureCollection",
-                                  features: [feature],
-                                }}
-                                style={(feature) => ({
-                                  fill:
-                                    feature.properties.name === hoveredState
-                                      ? "linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)"
-                                      : "linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)",
-                                  weight: 1,
-                                  color: "black",
-                                  fillOpacity: 0.7,
-                                })}
-                                onEachFeature={(feature, layer) => {
-                                  layer.on({
-                                    mouseover: handleStateHover,
-                                    mouseout: handleMouseOut,
-                                    click: handleStateClick, // Attach click event handler
-                                  });
-                                }}
-                              >
-                                <Tooltip className="opoppp">
-                                  {hoveredState}
-                                </Tooltip>
-                              </GeoJSON>
-                            ))}
-                        </MapContainer>
+                      <MapContainer
+                        center={[37.8, -96]}
+                        zoom={4}
+                        style={{ height: '500px', width: '100%' }}
+                      >
+                        {usStatesData &&
+                          usStatesData.map((feature) => (
+                            <GeoJSON
+                              key={feature.id}
+                              data={{
+                                type: 'FeatureCollection',
+                                features: [feature],
+                              }}
+                              style={(feature) => ({
+                                fillColor: allowedStates.includes(feature.properties.name) ? 'green' : 'black',
+                                weight: 1,
+                                color: 'black',
+                                fillOpacity: 0.7,
+                              })}
+                              onEachFeature={(feature, layer) => {
+                                layer.on({
+                                  mouseover: handleStateHover,
+                                  mouseout: handleMouseOut,
+                                  click: handleStateClick,
+                                });
+                              }}
+                            >
+                              <Tooltip className='opoppp'>{hoveredState}</Tooltip>
+                            </GeoJSON>
+                          ))}
+                      </MapContainer>
                       </div>
                     </div>
                     <div style={{ textAlign: "end" }}>

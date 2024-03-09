@@ -12,13 +12,6 @@ export const Inquiries = () => {
   const [selectedState, setSelectedState] = useState('');
   const [stateError, setStateError] = useState(false);
 
-  // Event handler for state click
-  const handleStateClick = (e) => {
-    const { name } = e.target.feature.properties;
-    setSelectedState(name || '');
-    setStateError(false); // Reset the state error when the state is selected
-  };
-
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false || selectedState === '') {
@@ -49,6 +42,26 @@ export const Inquiries = () => {
     fetchUSStatesData();
   }, []);
 
+  // List of allowed states
+  const allowedStates = ['Massachusetts', 'Colorado', 'California'];
+
+  // Event handler for state click
+  const handleStateClick = (e) => {
+    const { name } = e.target.feature.properties;
+
+    // Check if the clicked state is allowed
+    if (allowedStates.includes(name)) {
+      setSelectedState(name || '');
+      setStateError(false); // Reset the state error when the state is selected
+    } else {
+      // If the state is not allowed, show a popup or set an error state
+      // You can implement your own logic here (e.g., show a modal, set an error state)
+      alert(`Sorry, inquiries are not available for ${name}`);
+      setSelectedState('');
+      setStateError(true);
+    }
+  };
+
   // Event handler for state hover
   const handleStateHover = (e) => {
     const { name } = e.target.feature.properties;
@@ -60,9 +73,10 @@ export const Inquiries = () => {
     setHoveredState(null);
   };
 
+
   return (
     <>
-    <section className="InquiriesSectionSupport">
+    <section id="Contactus" className="InquiriesSectionSupport">
         <div className='container'>
             <div className='contactUsContact border-gradient inputBg border-gradient-purple'>
                <div>
@@ -144,38 +158,38 @@ export const Inquiries = () => {
 Select Your State
 </h3>
 <div className='map'>
-                        <MapContainer
-                          center={[37.8, -96]}
-                          zoom={4}
-                          style={{ height: '500px', width: '100%' }}
-                        >
-                          {usStatesData &&
-                            usStatesData.map((feature) => (
-                              <GeoJSON
-                                key={feature.id}
-                                data={{
-                                  type: 'FeatureCollection',
-                                  features: [feature],
-                                }}
-                                style={(feature) => ({
-                                  fill: feature.properties.name === hoveredState ? 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)' : 'linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%)',
-                                  weight: 1,
-                                  color: 'black',
-                                  fillOpacity: 0.7,
-                                })}
-                                onEachFeature={(feature, layer) => {
-                                  layer.on({
-                                    mouseover: handleStateHover,
-                                    mouseout: handleMouseOut,
-                                    click: handleStateClick,
-                                  });
-                                }}
-                              >
-                                <Tooltip className='opoppp'>{hoveredState}</Tooltip>
-                              </GeoJSON>
-                            ))}
-                        </MapContainer>
-                      </div>
+                      <MapContainer
+                        center={[37.8, -96]}
+                        zoom={4}
+                        style={{ height: '500px', width: '100%' }}
+                      >
+                        {usStatesData &&
+                          usStatesData.map((feature) => (
+                            <GeoJSON
+                              key={feature.id}
+                              data={{
+                                type: 'FeatureCollection',
+                                features: [feature],
+                              }}
+                              style={(feature) => ({
+                                fillColor: allowedStates.includes(feature.properties.name) ? 'green' : 'black',
+                                weight: 1,
+                                color: 'black',
+                                fillOpacity: 0.7,
+                              })}
+                              onEachFeature={(feature, layer) => {
+                                layer.on({
+                                  mouseover: handleStateHover,
+                                  mouseout: handleMouseOut,
+                                  click: handleStateClick,
+                                });
+                              }}
+                            >
+                              <Tooltip className='opoppp'>{hoveredState}</Tooltip>
+                            </GeoJSON>
+                          ))}
+                      </MapContainer>
+                    </div>
                     </div>
                     <div style={{ textAlign: 'end' }}>
                       <Form.Group as={Col} md="12" controlId="validationCustom03">

@@ -10,7 +10,7 @@ export const MeetOurTeam = () => {
           <div className="serviceEn" style={{display:'flex',justifyContent:'center',flexDirection:'column',textAlign:'center',alignItems:'center'}}>
             <h2 style={{ textAlign: "center" }}>Meet Our Team</h2>
             <p style={{ textAlign: "center", color: "white", fontSize: "20px" }}>
-            We desire to recognize energy as a fundamental human right.
+            For inquiries, have our sales engineers call you. Kindly fill out the following form
             </p>
           </div>
           <div class="container">
@@ -19,11 +19,11 @@ export const MeetOurTeam = () => {
   <div class="carddff card0">
     <div class="borderSEC">
       <h2>Hassan Saleh</h2>
-      <div class="icons">
+      {/* <div class="icons">
        <FontAwesomeIcon icon={faCodepen} />
             <FontAwesomeIcon icon={faInstagram} />
             <FontAwesomeIcon icon={faFacebook} />
-      </div>
+      </div> */}
     </div>
   </div>
   </div>
@@ -31,11 +31,11 @@ export const MeetOurTeam = () => {
   <div class="carddff card1">
     <div class="borderSEC">
       <h2>Bahaa Hamed</h2>
-      <div class="icons">
+      {/* <div class="icons">
        <FontAwesomeIcon icon={faCodepen} />
             <FontAwesomeIcon icon={faInstagram} />
             <FontAwesomeIcon icon={faFacebook} />
-      </div>
+      </div> */}
     </div>
   </div>
   </div>

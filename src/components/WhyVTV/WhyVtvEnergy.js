@@ -12,10 +12,13 @@ export const WhyVtvEnergy = () => {
                         Why VTV Energy  
                         </h2>
                         <p class="text-white px-6">
-                        We desire to recognize energy as a fundamental human right.  
+                        We desire to recognize energy as a fundamental human right.
+
 <br/>
 <br/>
-We believe that people should only be paying for the transportation and extraction of energy. As of the current moment, the entire industry is monopolized and services are going from 4 to 5 times the actual price.
+We believe that people should only be paying for the transportation and extraction of energy. As of the
+current moment, the entire industry is monopolized and services are going from 4 to 5 times the actual
+price.
                         </p>
                     </div>
                 </div>
