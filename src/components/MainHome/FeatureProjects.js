@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { Navigation, Pagination } from 'swiper/modules';
@@ -7,8 +7,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
 export const FeatureProjects = () => {
-    const [activeTab, setActiveTab] = useState("Commercial Projects");
+  const [activeTab, setActiveTab] = useState("Utility Assets");
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -16,128 +17,102 @@ export const FeatureProjects = () => {
 
   const renderImage = () => {
     switch (activeTab) {
-      case "Commercial Projects":
+      case "Utility Assets":
         return (
-            <Swiper
-            // install Swiper modules
+          <Swiper
             breakpoints={{
               576: {
                 width: 576,
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
               768: {
-                width: 300,
-                slidesPerView: 1,
+                width: 768,
+                slidesPerView: 2,
               },
             }}
             loop={true}
             modules={[Navigation, Pagination]}
-            spaceBetween={0}
+            spaceBetween={30}
             slidesPerView={1}
-            navigation = {true}
+            navigation={true}
             pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide className="bg-color1">
-              <div >
-               
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/systemDesign.png")}
-                      alt=""
-                    />
-               
+              <div>
+                <img
+                  className="img-fluid"
+                  style={{ height: '400px', objectFit: 'cover', width: '100%' }}
+                  src={require("../assets/images/nuclear_smr.png")}
+                  alt="Nuclear SMR"
+                />
+                <h4 className="text-white mt-3 px-2">Gen-IV SMR Station</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-color2">
-              <div >
-               
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/second.png")}
-                      alt=""
-                    />
-               
+              <div>
+                <img
+                  className="img-fluid"
+                  style={{ height: '400px', objectFit: 'cover', width: '100%' }}
+                  src={require("../assets/images/natural_gas.png")}
+                  alt="Natural Gas Turbine"
+                />
+                <h4 className="text-white mt-3 px-2">Combined Cycle Peaker Plant</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-color3">
               <div>
-                
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/systemDesign.png")}
-                      alt=""
-                    />
-                  </div>
-                  
-                
+                <img
+                  className="img-fluid"
+                  style={{ height: '400px', objectFit: 'cover', width: '100%' }}
+                  src={require("../assets/images/bess.png")}
+                  alt="BESS Storage Containers"
+                />
+                <h4 className="text-white mt-3 px-2">100MW Battery Energy Storage System (BESS)</h4>
+              </div>
             </SwiperSlide>
           </Swiper>
         );
-      case "Residential Projects":
+      case "Microgrid Projects":
         return (
-            <Swiper
-            // install Swiper modules
+          <Swiper
             breakpoints={{
               576: {
                 width: 576,
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
               768: {
-                width: 300,
-                slidesPerView: 1,
+                width: 768,
+                slidesPerView: 2,
               },
             }}
             loop={true}
-            onRealIndexChange={(swiper) => console.log(swiper.realIndex)}
             modules={[Navigation, Pagination]}
-            navigation = {true}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation={true}
             pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide className="bg-color1">
-              <div >
-               
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/systemDesign.png")}
-                      alt=""
-                    />
-               
+              <div>
+                <img
+                  className="img-fluid"
+                  style={{ height: '400px', objectFit: 'cover', width: '100%' }}
+                  src={require("../assets/images/commercial_infra.png")}
+                  alt="Industrial Microgrid"
+                />
+                <h4 className="text-white mt-3 px-2">Industrial Manufacturing Microgrid</h4>
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-color2">
-              <div >
-               
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/second.png")}
-                      alt=""
-                    />
-               
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="bg-color3">
               <div>
-                
-                    <img
-                      className="img-fluid"
-                      style={{height:'100%',objectFit:'cover',width:'100%'}}
-                      src={require("../assets/images/systemDesign.png")}
-                      alt=""
-                    />
-                  </div>
-                  
-                
+                <img
+                  className="img-fluid"
+                  style={{ height: '400px', objectFit: 'cover', width: '100%' }}
+                  src={require("../assets/images/bess.png")}
+                  alt="BESS integration"
+                />
+                <h4 className="text-white mt-3 px-2">Substation Storage Integration</h4>
+              </div>
             </SwiperSlide>
           </Swiper>
         );
@@ -145,34 +120,33 @@ export const FeatureProjects = () => {
         return null;
     }
   };
+
   return (
     <>
-    <section className="featureProjects">
-    <div className='container'>
-    <h2>Featured Projects</h2>
-    <div className='row'>
-        <div className='col-lg-2'>
-    <Tabs
+      <section className="featureProjects" style={{ padding: '60px 0', background: '#0B0B0B' }}>
+        <div className='container'>
+          <h2 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '3.5rem', color: '#00E5FF', marginBottom: '40px' }}>
+            Featured Assets & Projects
+          </h2>
+          <div className='row'>
+            <div className='col-lg-3'>
+              <Tabs
                 id="controlled-tab-example"
                 activeKey={activeTab}
                 onSelect={handleTabChange}
-                className="mb-3"
+                className="mb-4 flex-column custom-project-tabs"
+                style={{ borderRight: '1px solid #4A4A4A' }}
               >
-                <Tab eventKey="Commercial Projects" title="Commercial Projects">
-                  
-                </Tab>
-                <Tab eventKey="Residential Projects" title="Residential Projects">
-                  
-                </Tab>
-              
+                <Tab eventKey="Utility Assets" title="Utility Scale Assets" />
+                <Tab eventKey="Microgrid Projects" title="Microgrids & BESS" />
               </Tabs>
-              </div>
-                <div className='col-lg-10'>
-                {renderImage()}
-                    </div>
-    </div>
-    </div>
-    </section>
+            </div>
+            <div className='col-lg-9'>
+              {renderImage()}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};

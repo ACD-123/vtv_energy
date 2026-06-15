@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 body {
-  background: #1f1f1f !important;
+  background: #0B0B0B !important;
   margin: 0;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;
+}
+h1, h2, h3, h4, h5, h6, .WindText, .serviceEn h2, .box-innertab h2, .card .card-body h3, .contactUsTitleContact h2, .aboutVtv .serviceEn h2 {
+  font-family: 'Bebas Neue', 'Inter', sans-serif !important;
+  letter-spacing: 1.5px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -17,7 +22,7 @@ nav.navbar {
   z-index: 99;
 }
 .last-sec-img img:hover {
-  border: 3px solid #ff6900;
+  border: 3px solid #00E5FF;
 }
 .last-sec-img img {
   object-fit: cover;
@@ -75,15 +80,15 @@ nav.navbar {
 }
 section.counter{
   padding: 15px 15px 46px !important;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.map-inquiry{
   padding: 15px 15px 46px !important;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.AboutVtv{
   padding: 15px 15px 46px !important;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.aboutVtv{
   padding: 15px 15px 46px !important;
@@ -91,14 +96,14 @@ section.aboutVtv{
 }
 section.TabSec{
   padding: 15px 15px 46px !important;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.WhyVTVEnergy{
   padding: 15px 15px 46px !important;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 .InquiriesSectionSupport {
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
   padding: 24px 7px !important;
 }
 section.footerSection{
@@ -201,14 +206,14 @@ p{
   font-size: 16px !important;
 }
 .count-box span {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 66px !important;
 }
 section.vtvEnergy .bgvtv {
   height: 227px !important;
 }
 section.vtvEnergy .bgvtv h2 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 38px !important;
 }
 section.aboutVtv .engineeringServicesmain .serviceEn h2 {
@@ -318,7 +323,7 @@ section.whyVtv .service{
 }
 .menuButton{
   padding: 12px 0px !important;
-  background: linear-gradient(99.53deg, #FFE600 -166.03%, #FF3D00 168.83%);
+  background: linear-gradient(99.53deg, #4A4A4A -166.03%, #00E5FF 168.83%);
   border: none !important;
   border-radius: 2px !important;
 }
@@ -336,13 +341,13 @@ section.whyVtv .service{
 
 .hero-left:hover  h2{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .hero-left:hover h1{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -366,17 +371,17 @@ section.whyVtv .service{
   height: 500px;
   background-size: 100% 100%;
   padding-bottom: 22px;
-  border-right: 2px solid #f75102 ;
+  border-right: 2px solid #00E5FF ;
 }
 .hero-leftMain:hover h1{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .buttonMainHomeBanner{
   padding: 10px 20px;
-  background: linear-gradient(99.53deg, #FFE600 -166.03%, #FF3D00 168.83%);
+  background: linear-gradient(99.53deg, #4A4A4A -166.03%, #00E5FF 168.83%);
   border: none;
   border-radius: 3px;
   padding: 15px 40px;
@@ -398,7 +403,7 @@ section.whyVtv .service{
 }
 .engineeringServices{
   padding: 55px 48px;
-  background: #1F1F1F;
+  background: #0B0B0B;
 }
 .engineeringServices .serviceEn {
   display: flex;
@@ -409,11 +414,11 @@ section.whyVtv .service{
   padding-bottom: 5px;
   width: fit-content;
   border-bottom: 2px solid white;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%),
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;   
@@ -427,11 +432,11 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   padding-bottom: 5px;
   width: fit-content;
   border-bottom: 2px solid white;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%),
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;   
@@ -446,17 +451,17 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   height: 80vh;
   background-size: 100% 100%;
   padding-bottom: 22px;
-  /* border-right: 2px solid #f75102; */
+  /* border-right: 2px solid #00E5FF; */
 }
 .hero-leftWind:hover h2{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .hero-leftWind:hover h1{
   font-size: 45px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -473,7 +478,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -491,13 +496,13 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-leftWhyVTV:hover h2{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .hero-leftWhyVTV:hover h1{
   font-size: 45px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -515,7 +520,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -533,13 +538,13 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-leftContact:hover h1{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .hero-leftContact:hover h2{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -556,7 +561,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   font-size: 45px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -574,13 +579,13 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-right:hover h1{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .hero-right:hover h2{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -596,7 +601,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-rightMain:hover h1{
   font-size: 45px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -663,21 +668,21 @@ button.btnwork:hover {
   transition-duration: 0.1s;
 }
 .menunav.navbar-nav a.nav-link:hover {
-  color: #ff8027;
+  color: #00E5FF;
 }
 .menunav.navbar-nav a.nav-link.active {
-  color: #ff8027;
+  color: #00E5FF;
 }
 .menunav:hover {
-  border: 1px solid #ff8027 !important;
+  border: 1px solid #00E5FF !important;
 }
 
 button{
-  font-family: "Urbanist", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 .oursolarwork .oursolarworkfirst .btnwork{
   background: white;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 500;
 
@@ -700,7 +705,7 @@ button{
   height: 500px;
   background-size: 100% 100%;
   padding-bottom: 22px;
-  border-left: 2px solid #f75102;
+  border-left: 2px solid #00E5FF;
 }
 .hero-rightMain{
   /* background-size: 100% 100% !important; */
@@ -713,16 +718,16 @@ button{
   height: 100vh;
   background-size: 100% 100%;
   padding-bottom: 22px;
-  border-left: 2px solid #f75102;
+  border-left: 2px solid #00E5FF;
 }
 .paraBG{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   /* line-height: 89px; */
   /* letter-spacing: 0em; */
   /* text-align: left; */
   color: #ffffff;
-  /* background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
+  /* background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
@@ -742,33 +747,33 @@ button{
 }
 }
 section.hero{
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.counter{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.map-inquiry{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.AboutVtv{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.TabSec{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.WhyVTVEnergy{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.WhyVTVEnergy .EnergyLeft h2{
   font-size: 45px;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -781,7 +786,7 @@ section.WhyVTVEnergy .EnergyLeft{
 }
 
 section.featureProjects h2{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
 font-size: 64px;
 font-weight: 900;
 line-height: 86px;
@@ -791,11 +796,11 @@ color: #ffffff;
 }
 section.featureProjects{
   padding: 55px 48px;
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
 }
 section.aboutVtv{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 section.whyVtv .texter{
   display: flex;
@@ -809,11 +814,11 @@ section.whyVtv .texter h2{
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 2px solid white;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -824,29 +829,29 @@ section.whyVtv .texter p{
 }
 section.whyVtv{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 
 section.vtvEnergy{
   padding: 55px 48px;
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
 }
 .secondSection .secondSectionRight{
   color: white;
   text-align: left;
 }
 section.secondSection{
-  background: #1F1F1F;
+  background: #0B0B0B;
   padding: 100px 100px;
   color: white;
 }
 section.oursolarwork{
-  background: #1F1F1F;
+  background: #0B0B0B;
   padding: 55px 48px;
   color: white;
 }
 section.oursolarworkWind {
-  background: #1F1F1F;
+  background: #0B0B0B;
   padding: 0px 55px 0px;
   color: white;
 }
@@ -854,7 +859,7 @@ section.oursolarworkWind {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%),
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;   
@@ -868,11 +873,11 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   font-weight: 700;
   padding: 50px 125px 50px 20px;
   border-radius: 7px;
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
   
 }
 .oursolarwork .oursolarwork-left h2{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
 font-size: 45px;
 font-weight: 700;
 line-height: 49px;
@@ -882,7 +887,7 @@ text-align: left;
 }   
 .oursolarwork .oursolarwork-left p{
   
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 23px;
   font-weight: 500;
   line-height: 33px;
@@ -923,7 +928,7 @@ text-align: left;
   font-weight: 700;
   padding: 50px 50px 50px 50px;
   /* border-radius: 7px; */
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
 }
 .oursolarwork-right {
   transform: translate(-130px, 0px);
@@ -933,8 +938,8 @@ text-align: left;
 
 } */
 .oursolarwork .btnwork{
-  background: linear-gradient(99.53deg, #FFE600 -166.03%, #FF3D00 168.83%);
-  font-family: "Urbanist", sans-serif;
+  background: linear-gradient(99.53deg, #4A4A4A -166.03%, #00E5FF 168.83%);
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 500;
 
@@ -947,7 +952,7 @@ text-align: left;
     margin-top: 20px;
 }
 .oursolarworkWind .oursolarwork-leftWind h2{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
 font-size: 45px;
 font-weight: 700;
 line-height: 49px;
@@ -957,7 +962,7 @@ letter-spacing: 0em;
 }   
 .oursolarworkWind .oursolarwork-leftWind p{
   
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 30px;
   font-weight: 500;
   line-height: 33px;
@@ -966,7 +971,7 @@ letter-spacing: 0em;
   
 }
 .secondSection .secondSectionRight p{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 23px;
   font-weight: 500;
   line-height: 32px;
@@ -975,7 +980,7 @@ letter-spacing: 0em;
   
 }
 .secondSection .secondSectionRight button{
-  background: linear-gradient(99.53deg, #FFE600 -166.03%, #FF3D00 168.83%);
+  background: linear-gradient(99.53deg, #4A4A4A -166.03%, #00E5FF 168.83%);
   border: none;
   border-radius: 3px;
   padding: 15px 30px;
@@ -999,15 +1004,15 @@ letter-spacing: 0em;
   color: white !important;
 }
 .InquiriesSection{
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
   padding: 55px 48px;
 }
 .InquiriesSectionSupport{
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
   padding: 55px 48px;
 }
 .CultivateSection{
-  background-color: #1F1F1F;
+  background-color: #0B0B0B;
   background-image: linear-gradient(to right, rgb(0 0 0 / 44%), rgb(0 0 0 / 32%)), url(./components/assets/banner/Cultivate.png);
   background-size: 100% 100%;
   padding: 55px 48px;
@@ -1019,7 +1024,7 @@ letter-spacing: 0em;
   color: white;
 }
 .CultivateSection h2{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 64px;
   font-weight: 900;
   line-height: 89px;
@@ -1028,7 +1033,7 @@ letter-spacing: 0em;
   
 }
 .CultivateSection p{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 21px;
@@ -1036,25 +1041,25 @@ letter-spacing: 0em;
   text-align: left;  
 }
 .InquiriesSection h2{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 900;
   /* line-height: 89px; */
   /* letter-spacing: 0em; */
   text-align: left;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .InquiriesSectionSupport h2{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 900;
   color: white;
   /* line-height: 89px; */
   /* letter-spacing: 0em; */
   text-align: left;
-  /* background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
+  /* background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
   /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent;
 }
@@ -1102,7 +1107,7 @@ letter-spacing: 0em;
 }
 .full-withradius {
   position: relative;
-  background: #1f1f1f;
+  background: #0B0B0B;
   background-clip: padding-box;
   border-top-left-radius: 20px;
   padding: 26px 47px;
@@ -1122,19 +1127,19 @@ letter-spacing: 0em;
   left: 0;
   z-index: -1;
   margin: -4px -4px 0px -4px;
-  background: linear-gradient(to right, #ffbd00, #ff4000);
+  background: linear-gradient(to right, #4A4A4A, #00E5FF);
   border-top-left-radius: 20px;
   margin-bottom: 0px !important;
   border-top-right-radius: 20px;
 }
 .border-gradient-purple {
-  border-image-source: linear-gradient(to right, #FFE600 -32.66%, #FF3D00 101.88%) !important;
+  border-image-source: linear-gradient(to right, #4A4A4A -32.66%, #00E5FF 101.88%) !important;
 }
 .InquiriesSectionSupport .border-gradient-purple {
-  border-image-source: linear-gradient(to right, #FFE600 -32.66%, #FF3D00 101.88%) !important;
+  border-image-source: linear-gradient(to right, #4A4A4A -32.66%, #00E5FF 101.88%) !important;
 }
 .border-gradient-purpleFooter {
-  border-image-source: linear-gradient(to right, #FFE600 -32.66%, #FF3D00 101.88%) !important;
+  border-image-source: linear-gradient(to right, #4A4A4A -32.66%, #00E5FF 101.88%) !important;
 }
 
 .form {
@@ -1154,7 +1159,7 @@ letter-spacing: 0em;
 }
 .InquiriesSectionSupport .inputBg {
   padding: 20px;
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important;
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%) !important;
   box-shadow: 12px 0px 25px -8px rgba(224, 175, 207, 0.5);
 }
 .contactUs.border-gradient.inputBg p{
@@ -1221,7 +1226,7 @@ color: #FFFFFF;
   margin-top: 20px;
 }
 section.footerSection {
-  background: #1f1f1f;
+  background: #0B0B0B;
   padding: 60px 60px 0px 60px;
   text-align: left;
   color: white;
@@ -1282,27 +1287,27 @@ text-align: left;
 color: #FCFCFC;
 }
 .mapSec{
-  /* background: #1F1F1F; */
+  /* background: #0B0B0B; */
   padding: 15px 20px;
 }
 path.leaflet-interactive {
   outline: none;
 }
 path:hover, circle:hover {
-  stroke: #ff4000 !important;
+  stroke: #00E5FF !important;
   stroke-width: 2px;
   stroke-linejoin: round;
-  fill: #ff6f00 !important;
+  fill: #00E5FF !important;
   cursor: pointer;
 }
 .leaflet-container {
   border-radius: 20px;
-  background: linear-gradient(to right, #FFE600 -32.66%, #FF3D00 101.88%) !important;
+  background: linear-gradient(to right, #4A4A4A -32.66%, #00E5FF 101.88%) !important;
   outline-offset: 1px;
 }
 .InquiriesSectionSupport .contactUsContact .leaflet-container {
   border-radius: 20px;
-  background: linear-gradient(98.82deg, #ffe60000 -52.77%, #ff3d0000 125.07%) !important;
+  background: linear-gradient(98.82deg, #4A4A4A00 -52.77%, #00E5FF00 125.07%) !important;
   outline-offset: 1px;
 }
 .InquiriesSectionSupport .contactUsContact path.leaflet-interactive {
@@ -1327,7 +1332,7 @@ path:hover, circle:hover {
   display: none;
 }
 .opoppp{
-  background: #1F1F1F !important;
+  background: #0B0B0B !important;
   color: white !important;
 }
 .dert{
@@ -1346,20 +1351,20 @@ path:hover, circle:hover {
     padding: 11px;
     width: 26px;
     height: 26px;
-    background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important;
+    background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%) !important;
     border-radius: 50%;
     font-size: 27px;
 }
 .dert .socialIcon .icon path:hover{
-  stroke: #1F1F1F !important;
+  stroke: #0B0B0B !important;
   stroke-width: 2px;
   stroke-linejoin: round;
-  fill: #1F1F1F !important;
+  fill: #0B0B0B !important;
   cursor: pointer;
 }
 .dert .socialIcon .icon:hover{
   background: #fff !important;
-  color: #1F1F1F;
+  color: #0B0B0B;
 }
 .card{
   padding: 20px;
@@ -1368,7 +1373,7 @@ path:hover, circle:hover {
 }
 .card:hover{
   padding: 10px;
-  /* background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important; */
+  /* background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%) !important; */
   border-color: none !important;
   animation: fadeIn 2s;
   transition-duration: 0.2s;
@@ -1410,14 +1415,14 @@ path:hover, circle:hover {
   justify-content: flex-end;
 }
 .count-box span:hover {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 121px;
   font-weight: 900;
   /* line-height: 25px; */
   letter-spacing: 0em;
   text-align: center;
   /* border: 1.79px solid; */
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: initial;
@@ -1427,18 +1432,18 @@ path:hover, circle:hover {
   cursor: pointer;
 }
 .count-box span {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 121px;
   font-weight: 900;
   /* line-height: 25px; */
   letter-spacing: 0em;
   text-align: center;
   /* border: 1.79px solid; */
-  background: linear-gradient(135.75deg, #ffffff00 -15.5%, #ff3d0000 106.09%), linear-gradient(12deg, #ffffff00, #ffffff00);
+  background: linear-gradient(135.75deg, #ffffff00 -15.5%, #00E5FF00 106.09%), linear-gradient(12deg, #ffffff00, #ffffff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: thin;
-  -webkit-text-stroke-color: #ff6900;
+  -webkit-text-stroke-color: #00E5FF;
 }
 .count-box .hrborder {
   border: 1px solid #D2D2D2;
@@ -1451,7 +1456,7 @@ path:hover, circle:hover {
   position: relative;
 }
 .count-box p{
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
 font-size: 18px;
 font-weight: 700;
 line-height: 23px;
@@ -1470,14 +1475,14 @@ section.vtvEnergy .bgvtv{
 }
 section.vtvEnergy .bgvtv h2{
  
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 80px;
   font-weight: 900;
   /* line-height: 25px; */
   letter-spacing: 0em;
   text-align: center;
   /* border: 1.79px solid; */
-  background: linear-gradient(135.75deg, #ffffff00 -15.5%, #ff3d0000 106.09%), linear-gradient(12deg, #ffffff00, #ffffff00);
+  background: linear-gradient(135.75deg, #ffffff00 -15.5%, #00E5FF00 106.09%), linear-gradient(12deg, #ffffff00, #ffffff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: thin;
@@ -1492,11 +1497,11 @@ section.aboutVtv .engineeringServicesmain .serviceEn h2{
   padding-bottom: 5px;
   width: fit-content;
   border-bottom: 2px solid white;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%),
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;   
@@ -1508,7 +1513,7 @@ section.aboutVtv .engineeringServicesmain .box-innertab {
   flex-direction: column;
 }
 section.aboutVtv .engineeringServicesmain .box-innertab h2 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
 font-size: 36px;
 font-weight: 900;
 line-height: 40px;
@@ -1517,7 +1522,7 @@ text-align: left;
 color: #ffffff;
 }
 section.aboutVtv .engineeringServicesmain .box-innertab p {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
 font-size: 28px;
 font-weight: 400;
 line-height: 40px;
@@ -1555,13 +1560,13 @@ color: #ffffff;
   color: #fff;
   background: none;
   border: none;
-  border-bottom: 2px solid #FF3D00;
+  border-bottom: 2px solid #00E5FF;
 }
 .engineeringServicesmain ul.mb-3.nav.nav-tabs {
   border: none;
 }
 .missionButton{
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
   border: none;
   border-radius: 3px;
   padding: 15px 30px;
@@ -1641,7 +1646,7 @@ section.last-sec .swiper-slide>div{
   height: 284px !important;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%) !important;
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%) !important;
   padding: 5px !important;
 
 }
@@ -1665,11 +1670,11 @@ section.last-sec .swiper-slide>div{
 }
 section.last-sec h2{
   text-align: left;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 20px;
-  background: linear-gradient(125.75deg, #FFE600 -16.5%, #FF3D00 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(125.75deg, #4A4A4A -16.5%, #00E5FF 93.09%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -1803,7 +1808,7 @@ section.whyVtv .service h2 {
   font-size: 19px;
 }
 section.whyVtv .service:hover {
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
   color: #fff;
   transform: scale(1.05);
 }
@@ -1841,7 +1846,7 @@ section.map-inquiry .map img{
   height: 100%;
 }
 section.map-inquiry .gradientCurrentLocation{
-  background: linear-gradient(98.82deg, #FFE600 -52.77%, #FF3D00 125.07%);
+  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
   height: 20px;
   width: 50px;
   border-radius: 26px;

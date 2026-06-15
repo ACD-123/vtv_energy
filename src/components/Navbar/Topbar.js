@@ -4,31 +4,65 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom'; // Import NavLink instead of Link
+import { NavLink } from 'react-router-dom';
 
 export const Topbar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg">
+      <Navbar collapseOnSelect expand="lg" style={{ background: 'rgba(11, 11, 11, 0.95)', borderBottom: '1px solid #4A4A4A', padding: '15px 0' }}>
         <Container>
-          <Navbar.Brand href="#home">
-            <NavLink to="/"><img width={220} src={require("../assets/logo/headerLogo.png")} alt="Google" /></NavLink>
+          <Navbar.Brand>
+            <NavLink to="/">
+              <span style={{ 
+                fontFamily: "'Bebas Neue', 'Inter', sans-serif", 
+                fontSize: '2.2rem', 
+                color: '#FFFFFF', 
+                letterSpacing: '2px',
+                fontWeight: 'bold'
+              }}>
+                VTV <span style={{ color: '#00E5FF' }}>ENERGY</span>
+              </span>
+            </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" style={{ justifyContent: "space-around" }}>
-            <Nav className='menunav'>
-              <NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink>
-              <NavLink to="/solar-energy" className="nav-link" activeClassName="active">Solar Energy</NavLink>
-              <NavLink to="/wind-energy" className="nav-link" activeClassName="active">Wind energy</NavLink>
-              <NavLink to="/Why-VTV" className="nav-link" activeClassName="active">Why VTV</NavLink>
-              <NavLink to="/contact-us" className="nav-link" activeClassName="active">Contact & Support</NavLink>
+          <Navbar.Collapse id="responsive-navbar-nav" style={{ justifyContent: "space-between" }}>
+            <Nav className='menunav mx-auto' style={{ background: 'transparent', gap: '10px' }}>
+              <NavLink to="/" className="nav-link" style={({ isActive }) => ({ color: isActive ? '#00E5FF' : '#FFFFFF', fontSize: '16px', fontWeight: '500' })}>
+                Home
+              </NavLink>
+              <NavDropdown title={<span style={{ color: '#FFFFFF' }}>Solutions</span>} id="solutions-dropdown" className="custom-dropdown">
+                <NavDropdown.Item href="/solutions">Solutions Overview</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/solutions">Nuclear SMR</NavDropdown.Item>
+                <NavDropdown.Item href="/solutions">Natural Gas Peakers</NavDropdown.Item>
+                <NavDropdown.Item href="/solutions">Battery Storage (BESS)</NavDropdown.Item>
+              </NavDropdown>
+              <NavLink to="/commercial-infrastructure" className="nav-link" style={({ isActive }) => ({ color: isActive ? '#00E5FF' : '#FFFFFF', fontSize: '16px', fontWeight: '500' })}>
+                Commercial Infrastructure
+              </NavLink>
+              <NavLink to="/Why-VTV" className="nav-link" style={({ isActive }) => ({ color: isActive ? '#00E5FF' : '#FFFFFF', fontSize: '16px', fontWeight: '500' })}>
+                Why VTV
+              </NavLink>
+              <NavLink to="/foundation" className="nav-link" style={({ isActive }) => ({ color: isActive ? '#00E5FF' : '#FFFFFF', fontSize: '16px', fontWeight: '500' })}>
+                Foundation
+              </NavLink>
+              <NavLink to="/investor-relations" className="nav-link" style={({ isActive }) => ({ color: isActive ? '#00E5FF' : '#FFFFFF', fontSize: '16px', fontWeight: '500' })}>
+                Investors
+              </NavLink>
+              <NavLink to="/contact-us" className="nav-link" style={({ isActive }) => ({ color: isActive ? '#00E5FF' : '#FFFFFF', fontSize: '16px', fontWeight: '500' })}>
+                Contact & Support
+              </NavLink>
             </Nav>
             <Nav>
-              <Button className='px-4 menuButton'>Get A Quote</Button>
+              <NavLink to="/contact-us">
+                <Button className='px-4 menuButton' style={{ background: '#00E5FF', color: '#0B0B0B', border: 'none', fontWeight: 'bold' }}>
+                  Partner With Us
+                </Button>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
-  )
-}
+  );
+};

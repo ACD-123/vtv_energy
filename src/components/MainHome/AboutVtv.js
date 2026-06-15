@@ -7,9 +7,9 @@ export const AboutVtv = () => {
 
   const tabs = ["home", "profile", "contact"];
   const images = [
-    "Vision.png",
-    "Values.png",
-    "mission.png"
+    "nuclear_smr.png",
+    "bess.png",
+    "commercial_infra.png"
   ];
 
   const handleTabChange = (tab) => {
@@ -25,13 +25,13 @@ export const AboutVtv = () => {
       <div className="col-lg-8">
         <div className="image-container">
           <div className="image-prev">
-            <img src={require(`../assets/images/${images[prevIndex]}`)} alt={`Image ${prevIndex}`} />
+            <img src={require(`../assets/images/${images[prevIndex]}`)} alt={`Image ${prevIndex}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div className="image-active">
-            <img src={require(`../assets/images/${images[currentIndex]}`)} alt={`Image ${currentIndex}`} />
+            <img src={require(`../assets/images/${images[currentIndex]}`)} alt={`Image ${currentIndex}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div className="image-next">
-            <img src={require(`../assets/images/${images[nextIndex]}`)} alt={`Image ${nextIndex}`} />
+            <img src={require(`../assets/images/${images[nextIndex]}`)} alt={`Image ${nextIndex}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
         </div>
       </div>
@@ -44,10 +44,9 @@ export const AboutVtv = () => {
       <section className="aboutVtv">
         <div className="container engineeringServicesmain">
           <div className="serviceEn">
-            <h2>About VTV ENERGY</h2>
-            <p style={{ textAlign: "left", color: "white", fontSize: "20px" }}>
-            At VTV Energy, we offer the highest quality solar installations at the best pricing in the market
-guaranteed.
+            <h2>VTV Energy has evolved.</h2>
+            <p style={{ textAlign: "left", color: "white", fontSize: "22px", marginBottom: "40px" }}>
+              We have transitioned from residential solar to become a primary developer of utility-scale energy assets.
             </p>
           </div>
           <div className="row">
@@ -63,9 +62,9 @@ guaranteed.
               >
                 <Tab eventKey="home" title="Values">
                   <div className="box-innertab">
-                    <h2 className="text-white text-2xl">Values</h2>
+                    <h2 className="text-white text-2xl">Core Values</h2>
                     <p>
-                    We operate with Honesty, Integrity, Transparency, and Compassion.
+                      We operate with absolute integrity, transparency, and a relentless focus on safety, technical precision, and environmental stewardship.
                     </p>
                   </div>
                 </Tab>
@@ -73,8 +72,7 @@ guaranteed.
                   <div className="box-innertab">
                     <h2 className="text-white text-2xl">Vision</h2>
                     <p>
-                    We envision large-scale energy operations for commercial, residential, and utilities paving the way to
-excess renewable energy to fuel us.
+                      We envision grid-scale infrastructure, SMR modular nuclear reactors, and high-capacity battery systems providing carbon-free baseload energy to power modern civilization.
                     </p>
                   </div>
                 </Tab>
@@ -82,8 +80,7 @@ excess renewable energy to fuel us.
                   <div className="box-innertab">
                     <h2 className="text-white text-2xl">Our Mission</h2>
                     <p>
-                    Our mission is to provide as much renewable energy as possible with the highest technology at the
-lowest price possible in an effort to bring down energy prices across the United States.
+                      Our mission is to deploy and manage high-capacity macro grid infrastructure, ensuring energy independence, cost efficiency, and global stability.
                     </p>
                   </div>
                 </Tab>

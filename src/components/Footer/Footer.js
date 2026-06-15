@@ -1,70 +1,71 @@
-import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, far } from '@fortawesome/free-regular-svg-icons'
-import { faL, fas } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 
 export const Footer = () => {
   return (
     <>
-    <section className="footerSection">
+      <section className="footerSection" style={{ background: '#0B0B0B', borderTop: '1px solid #4A4A4A', padding: '60px 0 20px' }}>
         <div className='container'>
-        <div className='forborderFooter full-withradius'>
-        <div className='row'>
-                <div className='col-lg-3'>
-                    <div className='footerLogo'>
-                        <img width='200px' src={require('../assets/logo/logo.png')} alt='logo' />
-                        <p>VTV Energy For the People.</p>
-                    </div>
+          <div className='forborderFooter full-withradius' style={{ background: '#0B0B0B' }}>
+            <div className='row'>
+              <div className='col-lg-3 mb-4 mb-lg-0'>
+                <div className='footerLogo'>
+                  <span style={{ 
+                    fontFamily: "'Bebas Neue', 'Inter', sans-serif", 
+                    fontSize: '2.5rem', 
+                    color: '#FFFFFF', 
+                    letterSpacing: '2px',
+                    fontWeight: 'bold'
+                  }}>
+                    VTV <span style={{ color: '#00E5FF' }}>ENERGY</span>
+                  </span>
+                  <p style={{ color: '#B0B0B0', marginTop: '10px' }}>VTV Energy: Powering the Macro Grid.</p>
                 </div>
-                <div className='col-lg-3'>
-                    <div className='footerMenu'>
-                            <h4 className='cont'>Useful Links</h4>
-                        <ul>
-                            <li><a href='#'>Home</a></li>
-                            <li><a href='#'>Projects</a></li>
-                            <li><a href='#'>Solar Energy</a></li>
-                        </ul>
-                    </div>
+              </div>
+              <div className='col-lg-3 mb-4 mb-lg-0'>
+                <div className='footerMenu'>
+                  <h4 className='cont' style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Useful Links</h4>
+                  <ul style={{ padding: 0 }}>
+                    <li><a href='/' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Home</a></li>
+                    <li><a href='/solutions' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Solutions Portfolio</a></li>
+                    <li><a href='/commercial-infrastructure' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Commercial Infrastructure</a></li>
+                  </ul>
                 </div>
-                <div className='col-lg-3'>
-                    <div className='footerMenu'>
-                            <h4 className='cont'>Explore More</h4>
-                        <ul>
-                            <li><a href='#'>About Us</a></li>
-                            <li><a href='#'>Contact</a></li>
-                            <li><a href='#'>FAQs</a></li>
-                        </ul>
-                    </div>
+              </div>
+              <div className='col-lg-3 mb-4 mb-lg-0'>
+                <div className='footerMenu'>
+                  <h4 className='cont' style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Corporate</h4>
+                  <ul style={{ padding: 0 }}>
+                    <li><a href='/Why-VTV' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Why VTV</a></li>
+                    <li><a href='/foundation' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Energy To All Foundation</a></li>
+                    <li><a href='/investor-relations' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Investor Relations</a></li>
+                  </ul>
                 </div>
-                <div className='col-lg-3'>
-                    <div className='dert'>
-                    <div className='footerContact footerMenu'>
-                    <ul style={{padding:'0px'}}>
-                    <h4 className='cont'>Contact</h4>
-                            </ul>
-                        {/* <p>Address: 1234 Street Name, City Name, United States</p>
-                        <p>Phone: +123 456 7890</p> */}
-                        <p style={{display:'flex',gap:'5px',alignItems:'center',marginBottom:'0px'}}>
-                        <img src={require('../assets/images/email.png')} />
-                            <a href='mailto:info@vtvenergy.com' style={{color:'white'}}> 
-                            info@vtvenergy.com
-                            </a>
-                        </p>
-                    </div>
-                    <div className='socialIcon'>
-                        <a href='#'><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
-                        <a href='https://www.instagram.com/vtvenergy/' target="_blank"><FontAwesomeIcon className='icon' icon={faInstagram} /></a>
-                        {/* <a href='#'><FontAwesomeIcon className='icon' icon={faTwitter} /></a> */}
-                    </div>
-                    </div>
+              </div>
+              <div className='col-lg-3'>
+                <div className='dert'>
+                  <div className='footerContact footerMenu'>
+                    <ul style={{ padding: '0px' }}>
+                      <h4 className='cont' style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Contact</h4>
+                    </ul>
+                    <p style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '15px' }}>
+                      <img src={require('../assets/images/email.png')} alt="email icon" />
+                      <a href='mailto:info@vtvenergy.com' style={{ color: 'white', textDecoration: 'none' }}> 
+                        info@vtvenergy.com
+                      </a>
+                    </p>
+                  </div>
+                  <div className='socialIcon' style={{ display: 'flex', gap: '15px' }}>
+                    <a href='#' style={{ color: '#00E5FF' }}><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
+                    <a href='https://www.instagram.com/vtvenergy/' target="_blank" rel="noreferrer" style={{ color: '#00E5FF' }}><FontAwesomeIcon className='icon' icon={faInstagram} /></a>
+                  </div>
                 </div>
+              </div>
             </div>
-           </div>
-           {/* <div class="full-withradius border">Gradient border with border radius</div> */}
-
+          </div>
         </div>
-    </section>
+      </section>
     </>
-  )
-}
+  );
+};

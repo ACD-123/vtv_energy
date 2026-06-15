@@ -4,66 +4,64 @@ import { CountUp } from "use-count-up";
 export const CounterSec = () => {
   const [startCounting, setStartCounting] = useState(false);
 
-  // Use useEffect to start counting when the component mounts
   useEffect(() => {
     const handleScroll = () => {
       const counterSection = document.querySelector(".counter");
-      const counterSectionTop = counterSection.getBoundingClientRect().top;
-
-      // If the counter section is in the viewport, start counting
-      if (counterSectionTop < window.innerHeight) {
-        setStartCounting(true);
-        // Remove the scroll event listener to avoid unnecessary calculations
-        window.removeEventListener("scroll", handleScroll);
+      if (counterSection) {
+        const counterSectionTop = counterSection.getBoundingClientRect().top;
+        if (counterSectionTop < window.innerHeight) {
+          setStartCounting(true);
+          window.removeEventListener("scroll", handleScroll);
+        }
       }
     };
 
-    // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Empty dependency array ensures this effect runs only once
+  }, []);
 
   return (
     <>
-      <section className="counter">
+      <section className="counter" style={{ background: '#0B0B0B', padding: '60px 0' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box">
-                <i className="icofont-simple-smile"></i>
-                <span data-toggle="counter-up">
-                <CountUp  isCounting={startCounting} end={372} duration={3.2} />
+              <div className="count-box text-center">
+                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
+                  <CountUp isCounting={startCounting} end={650} duration={3.2} />
+                </span>
+                <span style={{ fontSize: '2rem', color: '#00E5FF', fontWeight: 'bold' }}></span>
+                <hr className="hrborder" />
+                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Capacity Deployed</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
+              <div className="count-box text-center">
+                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
+                  <CountUp isCounting={startCounting} end={18} duration={3.2} />
                 </span>
                 <hr className="hrborder" />
-                <p>Satisfied Clients</p>
+                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Utility Partnerships</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box">
-                <i className="icofont-document-folder"></i>
-                <span data-toggle="counter-up"><CountUp  isCounting={startCounting} end={13} duration={3.2} /></span>
+              <div className="count-box text-center">
+                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
+                  <CountUp isCounting={startCounting} end={42} duration={3.2} />
+                </span>
                 <hr className="hrborder" />
-                <p>Manufacturing Partners</p>
+                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Infrastructure Assets</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box">
-                <i className="icofont-live-support"></i>
-                <span data-toggle="counter-up"><CountUp  isCounting={startCounting} end={57} duration={3.2} /></span>
+              <div className="count-box text-center">
+                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
+                  <CountUp isCounting={startCounting} end={12} duration={3.2} />
+                </span>
                 <hr className="hrborder" />
-                <p>Participated Projects</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box">
-                <i className="icofont-users-alt-5"></i>
-                <span data-toggle="counter-up"><CountUp  isCounting={startCounting} end={5} duration={3.2} /></span>
-                <hr className="hrborder" />
-                <p>Countries worldwide</p>
+                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Countries Worldwide</p>
               </div>
             </div>
           </div>

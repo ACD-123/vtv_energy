@@ -172,7 +172,7 @@ Select Your State
                                 features: [feature],
                               }}
                               style={(feature) => ({
-                                fillColor: allowedStates.includes(feature.properties.name) ? 'green' : 'black',
+                                fillColor: allowedStates.includes(feature.properties.name) ? '#00E5FF' : '#4A4A4A',
                                 weight: 1,
                                 color: 'black',
                                 fillOpacity: 0.7,
