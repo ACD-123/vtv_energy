@@ -16,7 +16,7 @@ export const EngineeringServices = () => {
             <h2 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '3.5rem', color: '#00E5FF' }}>
               Providing top tier engineering services
             </h2>
-            <p style={{ textAlign: 'left', color: 'white', fontSize: '20px' }}>
+            <p style={{ textAlign: 'center', color: 'white', fontSize: '20px' }}>
               At VTV Energy, we deploy advanced engineering expertise to construct reliable, high-capacity utility assets and industrial microgrids.
             </p>
           </div>

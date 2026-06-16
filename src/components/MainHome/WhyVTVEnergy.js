@@ -22,7 +22,7 @@ export const WhyVTVEnergy = () => {
                   alt="feasibility"
                   style={{ marginBottom: '20px' }}
                 />
-                <h2 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Feasibility Analysis</h2>
+                <h4 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Feasibility Analysis</h4>
                 <p style={{ color: '#E0E0E0', fontSize: '14px' }}>
                   Detailed economic modeling, environmental impact assessments, and macro grid interconnection studies to ensure asset viability.
                 </p>
@@ -36,7 +36,7 @@ export const WhyVTVEnergy = () => {
                   alt="engineering" 
                   style={{ marginBottom: '20px' }}
                 />
-                <h2 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Site Engineering</h2>
+                <h4 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Site Engineering</h4>
                 <p style={{ color: '#E0E0E0', fontSize: '14px' }}>
                   Geotechnical, thermal, and mechanical engineering assessments optimized for large-scale nuclear, natural gas, and battery placements.
                 </p>
@@ -50,7 +50,7 @@ export const WhyVTVEnergy = () => {
                   alt="design" 
                   style={{ marginBottom: '20px' }}
                 />
-                <h2 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Custom Infrastructure</h2>
+                <h4 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Custom Infrastructure</h4>
                 <p style={{ color: '#E0E0E0', fontSize: '14px' }}>
                   Tailored integration of modular Gen-IV reactors, high-efficiency turbines, and desert BESS container storage grids.
                 </p>
@@ -64,7 +64,7 @@ export const WhyVTVEnergy = () => {
                   alt="financing" 
                   style={{ marginBottom: '20px' }}
                 />
-                <h2 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>PPA & Project Finance</h2>
+                <h4 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>PPA & Project Finance</h4>
                 <p style={{ color: '#E0E0E0', fontSize: '14px' }}>
                   Structured Power Purchase Agreements (PPAs), project equity underwriting, and debt placement for utility-scale developments.
                 </p>

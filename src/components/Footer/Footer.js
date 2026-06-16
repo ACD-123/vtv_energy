@@ -8,7 +8,7 @@ export const Footer = () => {
     <>
       <section className="footerSection" style={{ background: '#0B0B0B', borderTop: '1px solid #4A4A4A', padding: '60px 0 20px' }}>
         <div className='container'>
-          <div className='forborderFooter full-withradius' style={{ background: '#0B0B0B' }}>
+          <div className='forborderFooter' style={{ background: '#0B0B0B' }}>
             <div className='row'>
               <div className='col-lg-3 mb-4 mb-lg-0'>
                 <div className='footerLogo'>
