@@ -61,7 +61,7 @@ export const Inquiries = () => {
   }, [location]);
 
   // List of allowed states
-  const allowedStates = ['Massachusetts', 'Colorado', 'California'];
+  const allowedStates = ['Massachusetts', 'Colorado', 'California', 'New York', 'Texas', 'Florida', 'Washington', 'Oregon', 'Nevada', 'Arizona', 'Illinois', 'Pennsylvania', 'New Jersey', 'Virginia', 'North Carolina', 'Georgia', 'Ohio', 'Michigan', 'Minnesota', 'Wisconsin', 'Montana', 'Utah', 'Idaho', 'Maine', 'Vermont', 'New Hampshire', 'Connecticut', 'Rhode Island', 'Delaware', 'Maryland', 'Alaska', 'Hawaii', 'Wyoming', 'North Dakota', 'South Dakota', 'Nebraska', 'Kansas', 'Oklahoma', 'Arkansas', 'Louisiana', 'Mississippi', 'Alabama', 'Tennessee', 'Kentucky', 'West Virginia', 'Florida', 'Washington', 'Oregon', 'Nevada', 'Arizona', 'Illinois', 'Pennsylvania', 'New Jersey', 'Virginia', 'North Carolina', 'Georgia', 'Ohio', 'Michigan', 'Minnesota', 'Wisconsin', 'Indiana', 'South Carolina', 'Iowa', 'Missouri','New Mexico'];
 
   return (
     <>
@@ -151,7 +151,7 @@ export const Inquiries = () => {
                   </div>
                   <div className='col-lg-6 border-footer'>
                     <div className='mapSec'>
-                      <h3>Select Your State (Massachusetts, Colorado, or California)</h3>
+                      <h3>Select Your State (Massachusetts, Colorado, California, New York, Texas, Florida, Washington, Oregon, Nevada, Arizona, Illinois, Pennsylvania, New Jersey, Virginia, North Carolina, Georgia, Ohio, Michigan, Minnesota, Wisconsin, Montana, Utah, Idaho, Maine, Vermont, New Hampshire, Connecticut, Rhode Island, Delaware, Maryland, Alaska, Hawaii, Wyoming, North Dakota, South Dakota, Nebraska, Kansas, Oklahoma, Arkansas, Louisiana, Mississippi, Alabama, Tennessee, Kentucky, West Virginia, South Carolina, Iowa, Missouri, New Mexico)</h3>
                       <div className='map'>
                         <MapContainer
                           center={[37.8, -96]}
@@ -176,7 +176,7 @@ export const Inquiries = () => {
                                 const isSelected = selectedState === name;
                                 const isAllowed = allowedStates.includes(name);
                                 return {
-                                  fillColor: isSelected ? '#00E5FF' : (isAllowed ? '#00E5FF' : '#4A4A4A'),
+                                  fillColor: isSelected ? '#00E5FF' : (isAllowed ? '#585858' : '#4A4A4A'),
                                   weight: isSelected ? 2 : 1,
                                   color: isSelected ? '#FFFFFF' : 'black',
                                   fillOpacity: isSelected ? 0.9 : 0.6,
@@ -212,7 +212,7 @@ export const Inquiries = () => {
                                       setSelectedState(name);
                                       setStateError(false);
                                     } else {
-                                      alert(`Sorry, inquiries are not available for ${name}. Please select Massachusetts, Colorado, or California.`);
+                                      alert(`Sorry, inquiries are not available for ${name}. Please select Massachusetts, Colorado, California, New York, Texas, Florida, Washington, Oregon, Nevada, Arizona, Illinois, Pennsylvania, New Jersey, Virginia, North Carolina, Georgia, Ohio, Michigan, Minnesota, Wisconsin, Montana, Utah, Idaho, Maine, Vermont, New Hampshire, Connecticut, Rhode Island, Delaware, Maryland, Alaska, Hawaii, Wyoming, North Dakota, South Dakota, Nebraska, Kansas, Oklahoma, Arkansas, Louisiana, Mississippi, Alabama, Tennessee, Kentucky, West Virginia, Florida, Washington, Oregon, Nevada, Arizona, Illinois, Pennsylvania, New Jersey, Virginia, North Carolina, Georgia, Ohio, Michigan, Minnesota, Wisconsin.`);
                                       setSelectedState('');
                                       setStateError(true);
                                     }

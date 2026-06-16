@@ -36,7 +36,7 @@ export const InvestorRelations = () => {
                 <Button 
                   variant="outline-info" 
                   className="mt-3 w-100" 
-                  style={{ borderColor: '#00E5FF', color: '#00E5FF' }}
+                  style={{ borderColor: '#00E5FF', color: '#ffffff' }}
                   onClick={() => handleInquiryRedirect('Financial Reports')}
                 >
                   Financial Reports
@@ -58,7 +58,7 @@ export const InvestorRelations = () => {
                 <Button 
                   variant="outline-info" 
                   className="mt-3 w-100" 
-                  style={{ borderColor: '#00E5FF', color: '#00E5FF' }}
+                  style={{ borderColor: '#00E5FF', color: '#ffffff' }}
                   onClick={() => handleInquiryRedirect('PPA Portfolio Details')}
                 >
                   PPA Portfolio Details
@@ -80,7 +80,7 @@ export const InvestorRelations = () => {
                 <Button 
                   variant="outline-info" 
                   className="mt-3 w-100" 
-                  style={{ borderColor: '#00E5FF', color: '#00E5FF' }}
+                  style={{ borderColor: '#00E5FF', color: '#ffffff' }}
                   onClick={() => handleInquiryRedirect('Capital Allocation Strategy')}
                 >
                   Capital Allocation Strategy
