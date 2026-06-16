@@ -1,11 +1,18 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 export const InvestorRelations = () => {
+  const navigate = useNavigate();
+
+  const handleInquiryRedirect = (subject) => {
+    navigate('/contact-us', { state: { subject } });
+  };
+
   return (
     <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', color: 'white' }}>
       <Container>
-        <div className="mb-5 text-center">
+        <div className="mb-5 text-center fade-in-up">
           <h1 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '4.5rem', color: '#00E5FF' }}>
             Investor Relations
           </h1>
@@ -26,7 +33,12 @@ export const InvestorRelations = () => {
                     We partner with global infrastructure funds, investment banks, and institutional lenders to underwrite large-scale energy assets. Our project portfolios offer stable, long-term capital appreciation with high ESG compliance.
                   </p>
                 </div>
-                <Button variant="outline-info" className="mt-3 w-100" style={{ borderColor: '#00E5FF', color: '#00E5FF' }}>
+                <Button 
+                  variant="outline-info" 
+                  className="mt-3 w-100" 
+                  style={{ borderColor: '#00E5FF', color: '#00E5FF' }}
+                  onClick={() => handleInquiryRedirect('Financial Reports')}
+                >
                   Financial Reports
                 </Button>
               </Card.Body>
@@ -43,7 +55,12 @@ export const InvestorRelations = () => {
                     Our projects are backed by 15-to-25 year Power Purchase Agreements (PPAs) with investment-grade utilities, municipality grids, and industrial off-takers. This guarantees predictable revenues and solid downside protection.
                   </p>
                 </div>
-                <Button variant="outline-info" className="mt-3 w-100" style={{ borderColor: '#00E5FF', color: '#00E5FF' }}>
+                <Button 
+                  variant="outline-info" 
+                  className="mt-3 w-100" 
+                  style={{ borderColor: '#00E5FF', color: '#00E5FF' }}
+                  onClick={() => handleInquiryRedirect('PPA Portfolio Details')}
+                >
                   PPA Portfolio Details
                 </Button>
               </Card.Body>
@@ -60,7 +77,12 @@ export const InvestorRelations = () => {
                     VTV Energy leverages structured finance, non-recourse project debt, and tax equity structures to optimize capital efficiency. We maintain a high credit rating and solid capital adequacy ratios.
                   </p>
                 </div>
-                <Button variant="outline-info" className="mt-3 w-100" style={{ borderColor: '#00E5FF', color: '#00E5FF' }}>
+                <Button 
+                  variant="outline-info" 
+                  className="mt-3 w-100" 
+                  style={{ borderColor: '#00E5FF', color: '#00E5FF' }}
+                  onClick={() => handleInquiryRedirect('Capital Allocation Strategy')}
+                >
                   Capital Allocation Strategy
                 </Button>
               </Card.Body>

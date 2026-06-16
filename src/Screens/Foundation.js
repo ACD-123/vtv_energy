@@ -1,12 +1,19 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 export const Foundation = () => {
+  const navigate = useNavigate();
+
+  const handleInquiryRedirect = (subject) => {
+    navigate('/contact-us', { state: { subject } });
+  };
+
   return (
     <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', color: 'white' }}>
       <Container>
         <Row className="align-items-center">
-          <Col lg={6}>
+          <Col lg={6} className="fade-in-up">
             <h1 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '4.5rem', color: '#00E5FF' }}>
               Energy To All Foundation
             </h1>
@@ -22,7 +29,11 @@ export const Foundation = () => {
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#B0B0B0' }}>
               By constructing microgrids, deploying modular storage systems, and establishing local distribution networks, we stabilize communities, power local economies, and ensure that basic electricity is not a privilege, but a stable baseline for modern growth.
             </p>
-            <Button className="mt-4 px-4 py-2" style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}>
+            <Button 
+              className="mt-4 px-4 py-2" 
+              style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+              onClick={() => handleInquiryRedirect('Support Foundation Projects')}
+            >
               Support Foundation Projects
             </Button>
           </Col>

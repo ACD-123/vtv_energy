@@ -1,12 +1,19 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 export const CommercialInfrastructure = () => {
+  const navigate = useNavigate();
+
+  const handleInquiryRedirect = (subject) => {
+    navigate('/contact-us', { state: { subject } });
+  };
+
   return (
     <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', color: 'white' }}>
       <Container>
         <Row className="align-items-center mb-5">
-          <Col lg={6}>
+          <Col lg={6} className="fade-in-up">
             <h1 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '4.5rem', color: '#00E5FF' }}>
               Commercial Infrastructure
             </h1>
@@ -19,7 +26,11 @@ export const CommercialInfrastructure = () => {
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#D0D0D0' }}>
               We design and construct self-sustaining industrial microgrids combining high-output battery systems, peaking gas backup engines, and advanced automated switchgear.
             </p>
-            <Button className="mt-3 px-4 py-2" style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}>
+            <Button 
+              className="mt-3 px-4 py-2" 
+              style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+              onClick={() => handleInquiryRedirect('Industrial Feasibility Study')}
+            >
               Request Industrial Feasibility Study
             </Button>
           </Col>

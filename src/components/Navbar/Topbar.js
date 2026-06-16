@@ -31,11 +31,11 @@ export const Topbar = () => {
                 Home
               </NavLink>
               <NavDropdown title={<span style={{ color: '#FFFFFF' }}>Solutions</span>} id="solutions-dropdown" className="custom-dropdown">
-                <NavDropdown.Item href="/solutions">Solutions Overview</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/solutions?tab=nuclear">Solutions Overview</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/solutions">Nuclear SMR</NavDropdown.Item>
-                <NavDropdown.Item href="/solutions">Natural Gas Peakers</NavDropdown.Item>
-                <NavDropdown.Item href="/solutions">Battery Storage (BESS)</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/solutions?tab=nuclear">Nuclear SMR</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/solutions?tab=gas">Natural Gas Peakers</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/solutions?tab=bess">Battery Storage (BESS)</NavDropdown.Item>
               </NavDropdown>
               <NavLink to="/commercial-infrastructure" className="nav-link" style={({ isActive }) => ({ color: isActive ? '#00E5FF' : '#FFFFFF', fontSize: '16px', fontWeight: '500' })}>
                 Commercial Infrastructure

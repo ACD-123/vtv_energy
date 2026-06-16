@@ -1,6 +1,7 @@
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -27,9 +28,9 @@ export const Footer = () => {
                 <div className='footerMenu'>
                   <h4 className='cont' style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Useful Links</h4>
                   <ul style={{ padding: 0 }}>
-                    <li><a href='/' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Home</a></li>
-                    <li><a href='/solutions' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Solutions Portfolio</a></li>
-                    <li><a href='/commercial-infrastructure' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Commercial Infrastructure</a></li>
+                    <li><Link to='/' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Home</Link></li>
+                    <li><Link to='/solutions' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Solutions Portfolio</Link></li>
+                    <li><Link to='/commercial-infrastructure' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Commercial Infrastructure</Link></li>
                   </ul>
                 </div>
               </div>
@@ -37,9 +38,9 @@ export const Footer = () => {
                 <div className='footerMenu'>
                   <h4 className='cont' style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF' }}>Corporate</h4>
                   <ul style={{ padding: 0 }}>
-                    <li><a href='/Why-VTV' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Why VTV</a></li>
-                    <li><a href='/foundation' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Energy To All Foundation</a></li>
-                    <li><a href='/investor-relations' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Investor Relations</a></li>
+                    <li><Link to='/Why-VTV' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Why VTV</Link></li>
+                    <li><Link to='/foundation' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Energy To All Foundation</Link></li>
+                    <li><Link to='/investor-relations' style={{ color: '#FFFFFF', textDecoration: 'none' }}>Investor Relations</Link></li>
                   </ul>
                 </div>
               </div>
@@ -57,7 +58,7 @@ export const Footer = () => {
                     </p>
                   </div>
                   <div className='socialIcon' style={{ display: 'flex', gap: '15px' }}>
-                    <a href='#' style={{ color: '#00E5FF' }}><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
+                    <a href='https://www.linkedin.com/company/vtvenergy/' target="_blank" rel="noreferrer" style={{ color: '#00E5FF' }}><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
                     <a href='https://www.instagram.com/vtvenergy/' target="_blank" rel="noreferrer" style={{ color: '#00E5FF' }}><FontAwesomeIcon className='icon' icon={faInstagram} /></a>
                   </div>
                 </div>

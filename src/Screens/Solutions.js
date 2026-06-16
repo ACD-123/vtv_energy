@@ -1,13 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Tab, Nav, Button } from 'react-bootstrap';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export const Solutions = () => {
-  const [activeKey, setActiveKey] = useState('nuclear');
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [activeKey, setActiveKey] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('tab') || 'nuclear';
+  });
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const tab = params.get('tab');
+    if (tab && ['nuclear', 'gas', 'bess'].includes(tab)) {
+      setActiveKey(tab);
+    }
+  }, [location.search]);
+
+  const handleInquiryRedirect = (subject) => {
+    navigate('/contact-us', { state: { subject } });
+  };
 
   return (
     <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', color: 'white' }}>
       <Container>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 fade-in-up">
           <h1 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '4.5rem', color: '#00E5FF' }}>
             Infrastructure Solutions
           </h1>
@@ -26,7 +44,7 @@ export const Solutions = () => {
                     className="px-4 py-3"
                     style={{
                       background: activeKey === 'nuclear' ? '#00E5FF' : '#1a1a1a',
-                      color: activeKey === 'nuclear' ? '#0B0B0B' : '#white',
+                      color: activeKey === 'nuclear' ? '#0B0B0B' : 'white',
                       fontWeight: 'bold',
                       border: '1px solid #4A4A4A',
                       borderRadius: '4px',
@@ -45,7 +63,7 @@ export const Solutions = () => {
                     className="px-4 py-3"
                     style={{
                       background: activeKey === 'gas' ? '#00E5FF' : '#1a1a1a',
-                      color: activeKey === 'gas' ? '#0B0B0B' : '#white',
+                      color: activeKey === 'gas' ? '#0B0B0B' : 'white',
                       fontWeight: 'bold',
                       border: '1px solid #4A4A4A',
                       borderRadius: '4px',
@@ -64,7 +82,7 @@ export const Solutions = () => {
                     className="px-4 py-3"
                     style={{
                       background: activeKey === 'bess' ? '#00E5FF' : '#1a1a1a',
-                      color: activeKey === 'bess' ? '#0B0B0B' : '#white',
+                      color: activeKey === 'bess' ? '#0B0B0B' : 'white',
                       fontWeight: 'bold',
                       border: '1px solid #4A4A4A',
                       borderRadius: '4px',
@@ -104,7 +122,11 @@ export const Solutions = () => {
                     <li><strong>Modular Deployment:</strong> Scalable site setups that can expand from 77MWe to 924MWe.</li>
                     <li><strong>High Thermodynamic Efficiency:</strong> Tailored for integration with heavy industrial manufacturing.</li>
                   </ul>
-                  <Button className="mt-4 px-4 py-2" style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}>
+                  <Button 
+                    className="mt-4 px-4 py-2" 
+                    style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+                    onClick={() => handleInquiryRedirect('SMR Technical Specs')}
+                  >
                     Download SMR Technical Specs
                   </Button>
                 </Col>
@@ -133,7 +155,11 @@ export const Solutions = () => {
                     <li><strong>Low-Emission Modern Turbines:</strong> Low-NOx combustion chambers prepared for future clean hydrogen blends.</li>
                     <li><strong>Grid Stabilization:</strong> Real-time frequency response to balance renewable energy volatility.</li>
                   </ul>
-                  <Button className="mt-4 px-4 py-2" style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}>
+                  <Button 
+                    className="mt-4 px-4 py-2" 
+                    style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+                    onClick={() => handleInquiryRedirect('Turbine Operations')}
+                  >
                     Explore Turbine Operations
                   </Button>
                 </Col>
@@ -162,7 +188,11 @@ export const Solutions = () => {
                     <li><strong>Industrial Megapacks:</strong> Secure, fire-suppressed thermal cooling modular storage.</li>
                     <li><strong>Virtual Power Plants (VPP):</strong> Intelligent software dispatch orchestration.</li>
                   </ul>
-                  <Button className="mt-4 px-4 py-2" style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}>
+                  <Button 
+                    className="mt-4 px-4 py-2" 
+                    style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+                    onClick={() => handleInquiryRedirect('BESS Pricing')}
+                  >
                     Inquire for BESS Pricing
                   </Button>
                 </Col>
