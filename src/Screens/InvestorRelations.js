@@ -10,7 +10,7 @@ export const InvestorRelations = () => {
   };
 
   return (
-    <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', color: 'white' }}>
+    <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '160px', paddingBottom: '80px', color: 'white' }}>
       <Container>
         <div className="mb-5 text-center fade-in-up">
           <h1 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '4.5rem', color: '#00E5FF' }}>
@@ -23,7 +23,7 @@ export const InvestorRelations = () => {
 
         <Row className="align-items-stretch mt-5">
           <Col lg={4} className="mb-4">
-            <Card style={{ background: '#111', border: '1px solid #4A4A4A', borderRadius: '8px', padding: '20px', height: '100%' }}>
+            <Card className="inner-page-card h-100">
               <Card.Body className="d-flex flex-column justify-content-between">
                 <div>
                   <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2.2rem' }}>
@@ -35,8 +35,7 @@ export const InvestorRelations = () => {
                 </div>
                 <Button 
                   variant="outline-info" 
-                  className="mt-3 w-100" 
-                  style={{ borderColor: '#00E5FF', color: '#ffffff' }}
+                  className="mt-3 w-100 btn-premium-outline" 
                   onClick={() => handleInquiryRedirect('Financial Reports')}
                 >
                   Financial Reports
@@ -45,7 +44,7 @@ export const InvestorRelations = () => {
             </Card>
           </Col>
           <Col lg={4} className="mb-4">
-            <Card style={{ background: '#111', border: '1px solid #4A4A4A', borderRadius: '8px', padding: '20px', height: '100%' }}>
+            <Card className="inner-page-card h-100">
               <Card.Body className="d-flex flex-column justify-content-between">
                 <div>
                   <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2.2rem' }}>
@@ -57,8 +56,7 @@ export const InvestorRelations = () => {
                 </div>
                 <Button 
                   variant="outline-info" 
-                  className="mt-3 w-100" 
-                  style={{ borderColor: '#00E5FF', color: '#ffffff' }}
+                  className="mt-3 w-100 btn-premium-outline" 
                   onClick={() => handleInquiryRedirect('PPA Portfolio Details')}
                 >
                   PPA Portfolio Details
@@ -67,7 +65,7 @@ export const InvestorRelations = () => {
             </Card>
           </Col>
           <Col lg={4} className="mb-4">
-            <Card style={{ background: '#111', border: '1px solid #4A4A4A', borderRadius: '8px', padding: '20px', height: '100%' }}>
+            <Card className="inner-page-card h-100">
               <Card.Body className="d-flex flex-column justify-content-between">
                 <div>
                   <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2.2rem' }}>
@@ -79,8 +77,7 @@ export const InvestorRelations = () => {
                 </div>
                 <Button 
                   variant="outline-info" 
-                  className="mt-3 w-100" 
-                  style={{ borderColor: '#00E5FF', color: '#ffffff' }}
+                  className="mt-3 w-100 btn-premium-outline" 
                   onClick={() => handleInquiryRedirect('Capital Allocation Strategy')}
                 >
                   Capital Allocation Strategy

@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+.solutions-tab-btn {
+  background: rgba(26, 26, 26, 0.8) !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(74, 74, 74, 0.5) !important;
+  border-radius: 8px !important;
+  font-family: 'Bebas Neue', 'Inter', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+.solutions-tab-btn:hover {
+  background: rgba(0, 229, 255, 0.1) !important;
+  border-color: rgba(0, 229, 255, 0.5) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 229, 255, 0.2);
+  color: #00E5FF !important;
+}
+
+.solutions-tab-btn.active {
+  background: linear-gradient(135deg, #00E5FF 0%, #008BFF 100%) !important;
+  color: #0B0B0B !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 16px rgba(0, 229, 255, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.solutions-tab-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.5s ease;
+}
+
+.solutions-tab-btn:hover::after {
+  left: 150%;
+}

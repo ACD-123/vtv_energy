@@ -26,45 +26,47 @@ export const CounterSec = () => {
     <>
       <section className="counter" style={{ background: '#0B0B0B', padding: '60px 0' }}>
         <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box text-center">
-                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
-                  <CountUp isCounting={startCounting} end={650} duration={3.2} />
-                </span>
-                <span style={{ fontSize: '2rem', color: '#00E5FF', fontWeight: 'bold' }}></span>
-                <hr className="hrborder" />
-                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Capacity Deployed</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box text-center">
-                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
-                  <CountUp isCounting={startCounting} end={18} duration={3.2} />
-                </span>
-                <hr className="hrborder" />
-                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Utility Partnerships</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box text-center">
-                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
-                  <CountUp isCounting={startCounting} end={42} duration={3.2} />
-                </span>
-                <hr className="hrborder" />
-                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Infrastructure Assets</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-6 mt-5 mt-lg-0">
-              <div className="count-box text-center">
-                <span data-toggle="counter-up" style={{ color: '#00E5FF' }}>
-                  <CountUp isCounting={startCounting} end={12} duration={3.2} />
-                </span>
-                <hr className="hrborder" />
-                <p style={{ textTransform: 'uppercase', fontSize: '14px', letterSpacing: '1px' }}>Countries Worldwide</p>
-              </div>
-            </div>
-          </div>
+          <div className="row g-4">
+  <div className="col-lg-3 col-md-6">
+    <div className="counterCard">
+      <div className="counterNumber">
+        <CountUp isCounting={startCounting} end={650} duration={3.2} />+
+      </div>
+      <div className="counterLine"></div>
+      <h5>Capacity Deployed</h5>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-6">
+    <div className="counterCard">
+      <div className="counterNumber">
+        <CountUp isCounting={startCounting} end={18} duration={3.2} />+
+      </div>
+      <div className="counterLine"></div>
+      <h5>Utility Partnerships</h5>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-6">
+    <div className="counterCard">
+      <div className="counterNumber">
+        <CountUp isCounting={startCounting} end={42} duration={3.2} />+
+      </div>
+      <div className="counterLine"></div>
+      <h5>Infrastructure Assets</h5>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-6">
+    <div className="counterCard">
+      <div className="counterNumber">
+        <CountUp isCounting={startCounting} end={12} duration={3.2} />
+      </div>
+      <div className="counterLine"></div>
+      <h5>Countries Worldwide</h5>
+    </div>
+  </div>
+</div>
         </div>
       </section>
     </>

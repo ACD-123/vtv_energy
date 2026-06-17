@@ -54,7 +54,7 @@ export const FeatureProjects = () => {
                     alt="Nuclear SMR"
                   />
                 </div>
-                <div style={{ padding: '20px', textAlign: 'center' }}>
+                <div style={{ padding: '20px', textAlign: 'center', minHeight: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <h4 className="text-white m-0" style={{ fontSize: '1.4rem', fontWeight: '600' }}>Gen-IV SMR Station</h4>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export const FeatureProjects = () => {
                     alt="Natural Gas Turbine"
                   />
                 </div>
-                <div style={{ padding: '20px', textAlign: 'center' }}>
+                <div style={{ padding: '20px', textAlign: 'center', minHeight: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <h4 className="text-white m-0" style={{ fontSize: '1.4rem', fontWeight: '600' }}>Combined Cycle Peaker Plant</h4>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export const FeatureProjects = () => {
                     alt="BESS Storage Containers"
                   />
                 </div>
-                <div style={{ padding: '20px', textAlign: 'center' }}>
+                <div style={{ padding: '20px', textAlign: 'center', minHeight: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <h4 className="text-white m-0" style={{ fontSize: '1.4rem', fontWeight: '600' }}>100MW Battery Energy Storage System (BESS)</h4>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export const FeatureProjects = () => {
                     alt="Industrial Microgrid"
                   />
                 </div>
-                <div style={{ padding: '20px', textAlign: 'center' }}>
+                <div style={{ padding: '20px', textAlign: 'center', minHeight: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <h4 className="text-white m-0" style={{ fontSize: '1.4rem', fontWeight: '600' }}>Industrial Manufacturing Microgrid</h4>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export const FeatureProjects = () => {
                     alt="BESS integration"
                   />
                 </div>
-                <div style={{ padding: '20px', textAlign: 'center' }}>
+                <div style={{ padding: '20px', textAlign: 'center', minHeight: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <h4 className="text-white m-0" style={{ fontSize: '1.4rem', fontWeight: '600' }}>Substation Storage Integration</h4>
                 </div>
               </div>

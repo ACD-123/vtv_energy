@@ -21,7 +21,7 @@ export const WhyVtvEnergy = () => {
             </div>
             <div className='col-lg-6 col-md-12 col-sm-12'>
               <div className='EnergyRight'>
-                <img src={require('../assets/images/commercial_infra.png')} alt="Why VTV Energy" style={{ width: '100%', borderRadius: '8px' }} />
+                <img src={require('../assets/images/commercial_infra.png')} alt="Why VTV Energy" className="img-premium" />
               </div>
             </div>
           </div>

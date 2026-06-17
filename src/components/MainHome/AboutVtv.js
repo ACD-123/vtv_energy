@@ -24,15 +24,16 @@ export const AboutVtv = () => {
     return (
       <div className="col-lg-10">
         <div className="image-container">
-          <div className="image-prev">
-            <img src={require(`../assets/images/${images[prevIndex]}`)} alt={`Image ${prevIndex}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div className="image-active">
-            <img src={require(`../assets/images/${images[currentIndex]}`)} alt={`Image ${currentIndex}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-          <div className="image-next">
-            <img src={require(`../assets/images/${images[nextIndex]}`)} alt={`Image ${nextIndex}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
+          <img
+          src={require(`../assets/images/${images[currentIndex]}`)}
+          alt={`Image ${currentIndex}`}
+          style={{
+            width: "100%",
+            height: "500px",
+            objectFit: "cover",
+            borderRadius: "10px"
+          }}
+        />
         </div>
       </div>
     );

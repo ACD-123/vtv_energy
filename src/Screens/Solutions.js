@@ -41,18 +41,7 @@ export const Solutions = () => {
                 <Nav.Item>
                   <Nav.Link 
                     eventKey="nuclear" 
-                    className="px-4 py-3"
-                    style={{
-                      background: activeKey === 'nuclear' ? '#00E5FF' : '#1a1a1a',
-                      color: activeKey === 'nuclear' ? '#0B0B0B' : 'white',
-                      fontWeight: 'bold',
-                      border: '1px solid #4A4A4A',
-                      borderRadius: '4px',
-                      fontFamily: "'Bebas Neue', 'Inter', sans-serif",
-                      fontSize: '1.5rem',
-                      letterSpacing: '1px',
-                      cursor: 'pointer'
-                    }}
+                    className="px-4 py-3 solutions-tab-btn"
                   >
                     Nuclear SMR
                   </Nav.Link>
@@ -60,18 +49,7 @@ export const Solutions = () => {
                 <Nav.Item>
                   <Nav.Link 
                     eventKey="gas" 
-                    className="px-4 py-3"
-                    style={{
-                      background: activeKey === 'gas' ? '#00E5FF' : '#1a1a1a',
-                      color: activeKey === 'gas' ? '#0B0B0B' : 'white',
-                      fontWeight: 'bold',
-                      border: '1px solid #4A4A4A',
-                      borderRadius: '4px',
-                      fontFamily: "'Bebas Neue', 'Inter', sans-serif",
-                      fontSize: '1.5rem',
-                      letterSpacing: '1px',
-                      cursor: 'pointer'
-                    }}
+                    className="px-4 py-3 solutions-tab-btn"
                   >
                     Natural Gas Peakers
                   </Nav.Link>
@@ -79,18 +57,7 @@ export const Solutions = () => {
                 <Nav.Item>
                   <Nav.Link 
                     eventKey="bess" 
-                    className="px-4 py-3"
-                    style={{
-                      background: activeKey === 'bess' ? '#00E5FF' : '#1a1a1a',
-                      color: activeKey === 'bess' ? '#0B0B0B' : 'white',
-                      fontWeight: 'bold',
-                      border: '1px solid #4A4A4A',
-                      borderRadius: '4px',
-                      fontFamily: "'Bebas Neue', 'Inter', sans-serif",
-                      fontSize: '1.5rem',
-                      letterSpacing: '1px',
-                      cursor: 'pointer'
-                    }}
+                    className="px-4 py-3 solutions-tab-btn"
                   >
                     Battery Storage (BESS)
                   </Nav.Link>
@@ -106,7 +73,7 @@ export const Solutions = () => {
                   <img 
                     src={require('../components/assets/images/nuclear_smr.png')} 
                     alt="Nuclear SMR" 
-                    style={{ width: '100%', borderRadius: '8px', border: '1px solid #4A4A4A', boxShadow: '0px 0px 20px rgba(0, 229, 255, 0.15)' }} 
+                    className="img-premium"
                   />
                 </Col>
                 <Col lg={6}>
@@ -123,8 +90,7 @@ export const Solutions = () => {
                     <li><strong>High Thermodynamic Efficiency:</strong> Tailored for integration with heavy industrial manufacturing.</li>
                   </ul>
                   <Button 
-                    className="mt-4 px-4 py-2" 
-                    style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+                    className="mt-4 px-4 py-2 btn-premium" 
                     onClick={() => handleInquiryRedirect('SMR Technical Specs')}
                   >
                     Download SMR Technical Specs
@@ -139,7 +105,7 @@ export const Solutions = () => {
                   <img 
                     src={require('../components/assets/images/natural_gas.png')} 
                     alt="Natural Gas Turbine" 
-                    style={{ width: '100%', borderRadius: '8px', border: '1px solid #4A4A4A', boxShadow: '0px 0px 20px rgba(0, 229, 255, 0.15)' }} 
+                    className="img-premium"
                   />
                 </Col>
                 <Col lg={6}>
@@ -156,8 +122,7 @@ export const Solutions = () => {
                     <li><strong>Grid Stabilization:</strong> Real-time frequency response to balance renewable energy volatility.</li>
                   </ul>
                   <Button 
-                    className="mt-4 px-4 py-2" 
-                    style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+                    className="mt-4 px-4 py-2 btn-premium" 
                     onClick={() => handleInquiryRedirect('Turbine Operations')}
                   >
                     Explore Turbine Operations
@@ -172,7 +137,7 @@ export const Solutions = () => {
                   <img 
                     src={require('../components/assets/images/bess.png')} 
                     alt="Battery Energy Storage System" 
-                    style={{ width: '100%', borderRadius: '8px', border: '1px solid #4A4A4A', boxShadow: '0px 0px 20px rgba(0, 229, 255, 0.15)' }} 
+                    className="img-premium"
                   />
                 </Col>
                 <Col lg={6}>
@@ -189,8 +154,7 @@ export const Solutions = () => {
                     <li><strong>Virtual Power Plants (VPP):</strong> Intelligent software dispatch orchestration.</li>
                   </ul>
                   <Button 
-                    className="mt-4 px-4 py-2" 
-                    style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+                    className="mt-4 px-4 py-2 btn-premium" 
                     onClick={() => handleInquiryRedirect('BESS Pricing')}
                   >
                     Inquire for BESS Pricing

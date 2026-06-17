@@ -10,7 +10,7 @@ export const CommercialInfrastructure = () => {
   };
 
   return (
-    <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', color: 'white' }}>
+    <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '160px', paddingBottom: '80px', color: 'white' }}>
       <Container>
         <Row className="align-items-center mb-5">
           <Col lg={6} className="fade-in-up">
@@ -27,8 +27,7 @@ export const CommercialInfrastructure = () => {
               We design and construct self-sustaining industrial microgrids combining high-output battery systems, peaking gas backup engines, and advanced automated switchgear.
             </p>
             <Button 
-              className="mt-3 px-4 py-2" 
-              style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+              className="mt-3 px-4 py-2 btn-premium" 
               onClick={() => handleInquiryRedirect('Industrial Feasibility Study')}
             >
               Request Industrial Feasibility Study
@@ -38,14 +37,14 @@ export const CommercialInfrastructure = () => {
             <img 
               src={require('../components/assets/images/commercial_infra.png')} 
               alt="Commercial Infrastructure Microgrid" 
-              style={{ width: '100%', borderRadius: '8px', border: '1px solid #4A4A4A', boxShadow: '0px 0px 20px rgba(0, 229, 255, 0.15)' }} 
+              className="img-premium"
             />
           </Col>
         </Row>
 
         <Row className="mt-5 pt-4">
           <Col lg={4} className="mb-4">
-            <Card style={{ background: '#111', border: '1px solid #4A4A4A', borderRadius: '8px', padding: '20px' }}>
+            <Card className="inner-page-card">
               <Card.Body>
                 <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2rem' }}>
                   Industrial Microgrids
@@ -57,7 +56,7 @@ export const CommercialInfrastructure = () => {
             </Card>
           </Col>
           <Col lg={4} className="mb-4">
-            <Card style={{ background: '#111', border: '1px solid #4A4A4A', borderRadius: '8px', padding: '20px' }}>
+            <Card className="inner-page-card">
               <Card.Body>
                 <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2rem' }}>
                   BESS Integration
@@ -69,7 +68,7 @@ export const CommercialInfrastructure = () => {
             </Card>
           </Col>
           <Col lg={4} className="mb-4">
-            <Card style={{ background: '#111', border: '1px solid #4A4A4A', borderRadius: '8px', padding: '20px' }}>
+            <Card className="inner-page-card">
               <Card.Body>
                 <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2rem' }}>
                   Grid Substations

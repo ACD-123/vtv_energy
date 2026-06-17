@@ -6,7 +6,7 @@ export const Hero = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="hero" style={{ position: 'relative', overflow: 'hidden', height: '85vh' }}>
+    <section className="hero" style={{ position: 'relative', overflow: 'hidden', height: '100vh', }}>
       <video 
         autoPlay 
         loop 
@@ -14,6 +14,7 @@ export const Hero = () => {
         playsInline 
         style={{
           position: 'absolute',
+          padding: '60px 0',
           top: '50%',
           left: '50%',
           width: '100%',

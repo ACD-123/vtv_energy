@@ -46,7 +46,7 @@ nav.navbar {
   display: none !important;
 }
 .slick-list{
-  padding: 30px 0px 30px !important;
+  padding: 60px 0px 60px !important;
 }
 /* responsive start */
 @media only screen and (max-width: 768px) {
@@ -412,7 +412,7 @@ section.whyVtv .service{
     background-size: 100% 100%;
 }
 .engineeringServices{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background: #0B0B0B;
 }
 .engineeringServices .serviceEn {
@@ -564,7 +564,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .hero-leftContact:hover {
   cursor: pointer;
-  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/contact.png);  
+  background-image:  url(./components/assets/banner/contact.png);  
   border: none !important;
   border-radius: 2px !important;
   display: flex;
@@ -690,7 +690,6 @@ button.btnwork:hover {
   color: #00E5FF;
 }
 .menunav:hover {
-  border: 1px solid #00E5FF !important;
 }
 
 button{
@@ -766,23 +765,23 @@ section.hero{
   background-color: #0B0B0B;
 }
 section.counter{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background-color: #0B0B0B;
 }
 section.map-inquiry{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background-color: #0B0B0B;
 }
 section.AboutVtv{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background-color: #0B0B0B;
 }
 section.TabSec{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background-color: #0B0B0B;
 }
 section.WhyVTVEnergy{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background-color: #0B0B0B;
 }
 section.WhyVTVEnergy .EnergyLeft h2{
@@ -811,11 +810,11 @@ text-align: left;
 color: #ffffff;
 }
 section.featureProjects{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
 }
 section.aboutVtv{
-  padding: 55px 48px;
+  padding: 60px 60px;
   background-color: #0B0B0B;
 }
 section.whyVtv .texter{
@@ -844,12 +843,12 @@ section.whyVtv .texter p{
   font-size: 20px;
 }
 section.whyVtv{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background-color: #0B0B0B;
 }
 
 section.vtvEnergy{
-  padding: 55px 48px;
+  padding: 30px 30px;
   background-color: #0B0B0B;
 }
 .secondSection .secondSectionRight{
@@ -863,12 +862,12 @@ section.secondSection{
 }
 section.oursolarwork{
   background: #0B0B0B;
-  padding: 55px 48px;
+  padding: 30px 30px;
   color: white;
 }
 section.oursolarworkWind {
   background: #0B0B0B;
-  padding: 0px 55px 0px;
+  padding: 0px 30px 0px;
   color: white;
 }
 .secondSection .secondSectionRight h2{
@@ -1021,17 +1020,17 @@ letter-spacing: 0em;
 }
 .InquiriesSection{
   background-color: #0B0B0B;
-  padding: 55px 48px;
+  padding: 30px 30px;
 }
 .InquiriesSectionSupport{
   background-color: #0B0B0B;
-  padding: 55px 48px;
+  padding: 30px 30px;
 }
 .CultivateSection{
   background-color: #0B0B0B;
   background-image: linear-gradient(to right, rgb(0 0 0 / 44%), rgb(0 0 0 / 32%)), url(./components/assets/banner/Cultivate.png);
   background-size: 100% 100%;
-  padding: 55px 48px;
+  padding: 30px 30px;
   height: 500px;
   display: flex;
   align-items: center;
@@ -1388,14 +1387,25 @@ path:hover, circle:hover {
   border-color: transparent !important;
 }
 .card:hover{
-  padding: 10px;
+  /* padding: 10px; */
   /* background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%) !important; */
-  border-color: none !important;
-  transform: scale(1.03);
-  transition-duration: 0.2s;
+  border-color: transparent !important;
   cursor: pointer;
-  transform: scale(1.03);
 }
+
+/* Base state with ultra-smooth transition for Engineering Services cards */
+.engineeringServices .card {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  padding: 20px !important;
+}
+
+/* Light hover effect for Engineering Services cards */
+.engineeringServices .card:hover {
+  transform: translateY(-3px) scale(1.01) !important;
+  box-shadow: 0 8px 25px rgba(0, 229, 255, 0.12) !important;
+  padding: 20px !important;
+}
+
 .card .card-body p{
   color: white;
 }
@@ -1405,30 +1415,36 @@ path:hover, circle:hover {
 }
 .card .card-body.cole1 {
   background-image: linear-gradient(to right, rgb(0 0 0 / 23%), rgb(0 0 0 / 28%)), url(./components/assets/images/card9.png);
-  background-size: 100% 100%;
+  background-size: auto 100%;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
+  align-items: center;
   height: 540px;
   justify-content: flex-end;
+  padding-bottom: 30px;
 }
 .card .card-body.cole2 {
   background-image: linear-gradient(to right, rgb(0 0 0 / 23%), rgb(0 0 0 / 28%)), url(./components/assets/images/cole9.jpg);
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
+  align-items: center;
   height: 540px;
   justify-content: flex-end;
+  padding-bottom: 30px;
 }
 .card .card-body.cole3 {
   background-image: linear-gradient(to right, rgb(0 0 0 / 23%), rgb(0 0 0 / 28%)), url(./components/assets/images/cole3.png);
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
+  align-items: center;
   height: 381px;
   justify-content: flex-end;
+  padding-bottom: 30px;
 }
 .count-box span:hover {
   font-family: "Inter", sans-serif;
@@ -1815,19 +1831,22 @@ section.last-sec h2{
   border-top-right-radius: 0px;
   padding: 11px 11px;
 }
-section.whyVtv .service {
-  text-align: center;
-  padding: 25px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  color: white;
-  display: flex;
-  cursor: pointer;
-  background: transparent;
-  transition: transform 0.5s, background 0.5s;
-  flex-direction: column;
-  text-align: left;
-}
+  section.whyVtv .service {
+    background: #181a1f;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 35px 25px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    flex-direction: column;
+    align-items: center;
+    text-align: center !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
 
 section.whyVtv .service i {
   font-size: 40px;
@@ -1845,9 +1864,9 @@ section.whyVtv .service h2 {
   font-size: 19px;
 }
 section.whyVtv .service:hover {
-  background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%);
-  color: #fff;
-  transform: scale(1.05);
+  transform: translateY(-8px);
+  border-color: rgba(0, 229, 255, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 229, 255, 0.15);
 }
 
 section.whyVtv .service:hover i {
@@ -2153,7 +2172,7 @@ button:not(.navbar-toggler):not(.slick-arrow):not(.swiper-button-prev):not(.swip
   padding: 30px;
   z-index: 3;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  text-align: left !important;
+  text-align: center !important;
 }
 
 .team-card-role {
@@ -2180,7 +2199,7 @@ button:not(.navbar-toggler):not(.slick-arrow):not(.swiper-button-prev):not(.swip
   width: 40px;
   height: 2px;
   background: #00E5FF;
-  margin-bottom: 12px;
+  margin: 0 auto 12px auto;
   transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -2227,3 +2246,317 @@ button:not(.navbar-toggler):not(.slick-arrow):not(.swiper-button-prev):not(.swip
 
 
 
+.nav-tabs .nav-link:hover {
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.nav-tabs .nav-link:focus {
+  box-shadow: none !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff !important;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:active {
+  outline: none !important;
+}
+.nav-tabs .nav-link {
+  transition: all 0.3s ease;
+  box-shadow: none !important;
+}
+
+.nav-tabs .nav-link:hover {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+section.vtvEnergy{
+  padding: 0;
+  margin: 0;
+}
+
+section.vtvEnergy .bgvtv{
+  width: 100%;
+}
+
+
+
+
+
+.counterCard{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0,229,255,0.2);
+  border-radius: 20px;
+  padding: 35px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.counterCard:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,229,255,0.2);
+}
+
+.counterNumber{
+  font-size: 55px;
+  font-weight: 800;
+  color: #00E5FF;
+}
+
+.counterLine{
+  width: 60px;
+  height: 3px;
+  background: #00E5FF;
+  margin: 15px auto;
+}
+
+.counterCard h5{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.counterNumber{
+  font-size: 70px;
+  font-weight: 500; /* pehle 800 tha */
+  color: #00E5FF;
+  letter-spacing: 2px;
+}
+.counterCard{
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(0,229,255,0.15);
+  border-radius: 24px;
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.counterCard:hover{
+  transform: translateY(-12px);
+  border-color: #00E5FF;
+  box-shadow: none;
+}
+.counterLine{
+  width: 0;
+  height: 3px;
+  background: #00E5FF;
+  margin: 18px auto;
+  animation: growLine 1.5s ease forwards;
+}
+
+@keyframes growLine{
+  from{
+    width:0;
+  }
+  to{
+    width:70px;
+  }
+}
+.counterCard:hover .counterNumber{
+  text-shadow: 0 0 12px rgba(0,229,255,0.5);
+}
+.counterCard h5{
+  color:#fff;
+  font-size:14px;
+  font-weight:400;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-top:15px;
+}
+.teamMemberCard {
+  position: relative;
+  text-align: center;
+}
+
+.teamImageWrapper {
+  background: #dcdcdc;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 420px;
+}
+
+.teamImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teamInfoBox {
+  background: #fff;
+  width: 85%;
+  margin: -35px auto 0;
+  position: relative;
+  z-index: 2;
+  padding: 18px 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.teamInfoBox h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  text-transform: uppercase;
+}
+
+.teamInfoBox p {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.teamRow{
+  margin-top: 30px;
+}
+
+.teamMember{
+  text-align: center;
+}
+
+.teamCircleImg{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.teamMember h4{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.teamMember p{
+  color: rgba(255,255,255,0.8);
+  font-size: 18px;
+  margin: 0;
+}
+
+.teamCircleImg{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #d9d9d9;
+  padding: 0;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.menunav .nav-link {
+
+  transition: all 0.3s ease;
+}
+
+.menunav .nav-link:hover {
+  color: #00E5FF !important;
+}
+
+.custom-dropdown .dropdown-toggle:hover {
+  color: #00E5FF !important;
+}
+
+.custom-dropdown .dropdown-toggle {
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.menunav .nav-link:hover,
+.custom-dropdown .dropdown-toggle:hover {
+  color: #00E5FF !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Standardized Premium Inner Page Styles */
+.inner-page-card {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  background: #111 !important;
+  border: 1px solid #4A4A4A !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+}
+
+.inner-page-card:hover {
+  transform: translateY(-5px) scale(1.02) !important;
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.15) !important;
+  border-color: #00E5FF !important;
+  padding: 20px !important;
+}
+
+.btn-premium {
+  background: #00E5FF !important;
+  color: #0B0B0B !important;
+  border: none !important;
+  font-weight: bold !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #00E5FF 0%, #008fa3 100%);
+  z-index: -1;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.4) !important;
+  color: #0B0B0B !important;
+}
+
+.btn-premium:hover::before {
+  opacity: 1 !important;
+}
+
+.btn-premium-outline {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid #00E5FF !important;
+  font-weight: bold !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-premium-outline:hover {
+  background: rgba(0, 229, 255, 0.1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.2) !important;
+  color: #00E5FF !important;
+}
+
+.img-premium {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  border-radius: 8px !important;
+  border: 1px solid #4A4A4A !important;
+  box-shadow: 0px 0px 20px rgba(0, 229, 255, 0.05) !important;
+  width: 100% !important;
+}
+
+.img-premium:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0px 10px 30px rgba(0, 229, 255, 0.2) !important;
+  border-color: rgba(0, 229, 255, 0.5) !important;
+}

@@ -10,7 +10,7 @@ export const Foundation = () => {
   };
 
   return (
-    <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '120px', paddingBottom: '80px', color: 'white' }}>
+    <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '160px', paddingBottom: '60px', color: 'white' }}>
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="fade-in-up">
@@ -30,8 +30,7 @@ export const Foundation = () => {
               By constructing microgrids, deploying modular storage systems, and establishing local distribution networks, we stabilize communities, power local economies, and ensure that basic electricity is not a privilege, but a stable baseline for modern growth.
             </p>
             <Button 
-              className="mt-4 px-4 py-2" 
-              style={{ background: '#00E5FF', border: 'none', color: '#0B0B0B', fontWeight: 'bold' }}
+              className="mt-4 px-4 py-2 btn-premium" 
               onClick={() => handleInquiryRedirect('Support Foundation Projects')}
             >
               Support Foundation Projects
@@ -41,7 +40,7 @@ export const Foundation = () => {
             <img 
               src={require('../components/assets/images/foundation.png')} 
               alt="Energy To All Foundation field operations" 
-              style={{ width: '100%', borderRadius: '8px', border: '1px solid #4A4A4A', boxShadow: '0px 0px 20px rgba(0, 229, 255, 0.15)' }} 
+              className="img-premium"
             />
           </Col>
         </Row>
