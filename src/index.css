@@ -651,18 +651,20 @@ img{
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     cursor: pointer;
+    border-radius: 10px;
 }
 img:hover {
-  -webkit-transform: scale(1.3) !important;
-  transform: scale(1.1) !important;
+  -webkit-transform: scale(1.03) !important;
+  transform: scale(1.03) !important;
   opacity: 0.7;
+  border-radius: 10px;
 }
 button.px-4.menuButton:hover {
-  animation: fadeIn 1s;
+  transform: scale(1.03);
   transition-duration: 0.1s;
 }
 button.btnSecondSec:hover {
-  animation: fadeIn 1s;
+  transform: scale(1.03);
   transition-duration: 0.1s;
 }
 ::placeholder {
@@ -678,7 +680,7 @@ button.btnSecondSec:hover {
   color: white !important;
 }
 button.btnwork:hover {
-  animation: fadeIn 1s;
+  transform: scale(1.03);
   transition-duration: 0.1s;
 }
 .menunav.navbar-nav a.nav-link:hover {
@@ -1389,10 +1391,10 @@ path:hover, circle:hover {
   padding: 10px;
   /* background: linear-gradient(98.82deg, #4A4A4A -52.77%, #00E5FF 125.07%) !important; */
   border-color: none !important;
-  animation: fadeIn 2s;
+  transform: scale(1.03);
   transition-duration: 0.2s;
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .card .card-body p{
   color: white;
@@ -1441,7 +1443,7 @@ path:hover, circle:hover {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: initial;
   -webkit-text-stroke-color: #fafdff;
-  animation: fadeIn 1s;
+  transform: scale(1.03);
   transition-duration: 0.1s;
   cursor: pointer;
 }
@@ -1721,7 +1723,7 @@ section.last-sec h2{
 .card0:hover {
   background: url("./components/assets/images/hassan.png") center no-repeat;
   /* background-size: 600px; */
-  animation: fadeIn 2s;
+  transform: scale(1.03);
   transition-duration: 0.2s;
 }
 .card0:hover h2 {
@@ -1742,7 +1744,7 @@ section.last-sec h2{
 }
 .card1:hover {
   background: url("./components/assets/images/Hamed.png") center no-repeat;
-  animation: fadeIn 2s;
+  transform: scale(1.03);
   transition-duration: 0.2s;
 }
 .card1:hover h2 {
@@ -1758,7 +1760,7 @@ section.last-sec h2{
 }
 .card2:hover {
   background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center no-repeat;
-  animation: fadeIn 2s;
+  transform: scale(1.03);
   transition-duration: 0.2s;
 }
 .card2:hover h2 {
@@ -2222,3 +2224,6 @@ button:not(.navbar-toggler):not(.slick-arrow):not(.swiper-button-prev):not(.swip
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
