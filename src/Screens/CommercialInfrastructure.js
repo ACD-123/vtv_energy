@@ -1,6 +1,12 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import { Hero } from '../components/WhyVTV/Hero';
+import { WhyVtvEnergy } from '../components/WhyVTV/WhyVtvEnergy';
+import { AboutVtv } from '../components/WhyVTV/AboutVtv';
+import { TabSec } from '../components/WhyVTV/TabSec';
+import { MeetOurTeam } from '../components/MainHome/MeetOurTeam';
+import { Inquiries } from '../components/ContactSupport/Inquiries';
 
 export const CommercialInfrastructure = () => {
   const navigate = useNavigate();
@@ -9,22 +15,24 @@ export const CommercialInfrastructure = () => {
     navigate('/contact-us', { state: { subject } });
   };
 
+  const tabsData = [
+    { eventKey: "Microgrids", title: "Industrial Microgrids", heading: "Industrial Microgrids", content: "Complete self-healing electrical architecture capable of islanding from the main transmission grid during load shedding or failures." },
+    { eventKey: "BESS", title: "BESS Integration", heading: "BESS Integration", content: "Peak shaving BESS systems designed to discharge during peak demand hours, protecting facilities from high demand surcharges and price spikes." },
+    { eventKey: "Substations", title: "Grid Substations", heading: "Grid Substations", content: "Custom substation building, engineering, and maintenance for private high-voltage distribution systems, ensuring maximum safety." }
+  ];
+
   return (
-    <div style={{ background: '#0B0B0B', minHeight: '100vh', paddingTop: '160px', paddingBottom: '80px', color: 'white' }}>
-      <Container>
-        <Row className="align-items-center mb-5">
-          <Col lg={6} className="fade-in-up">
-            <h1 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", fontSize: '4.5rem', color: '#00E5FF' }}>
-              Commercial Infrastructure
-            </h1>
+    <>
+      <Hero bgClass="hero-leftCommercial" />
+      <WhyVtvEnergy 
+        title="Commercial Infrastructure"
+        description={
+          <>
             <h3 className="mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: '300', color: '#B0B0B0' }}>
               High-Capacity Microgrids & BESS Integrations
             </h3>
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#D0D0D0' }}>
               At VTV Energy, we deploy localized, high-reliability commercial infrastructure. For energy-intensive industries, commercial manufacturing, data centers, and industrial ports, standard grids do not offer the stability, safety, and price flexibility required.
-            </p>
-            <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#D0D0D0' }}>
-              We design and construct self-sustaining industrial microgrids combining high-output battery systems, peaking gas backup engines, and advanced automated switchgear.
             </p>
             <Button 
               className="mt-3 px-4 py-2 btn-premium" 
@@ -32,55 +40,18 @@ export const CommercialInfrastructure = () => {
             >
               Request Industrial Feasibility Study
             </Button>
-          </Col>
-          <Col lg={6} className="mt-5 mt-lg-0">
-            <img 
-              src={require('../components/assets/images/commercial_infra.png')} 
-              alt="Commercial Infrastructure Microgrid" 
-              className="img-premium"
-            />
-          </Col>
-        </Row>
-
-        <Row className="mt-5 pt-4">
-          <Col lg={4} className="mb-4">
-            <Card className="inner-page-card">
-              <Card.Body>
-                <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2rem' }}>
-                  Industrial Microgrids
-                </h3>
-                <p style={{ color: '#D0D0D0', fontSize: '15px' }}>
-                  Complete self-healing electrical architecture capable of islanding from the main transmission grid during load shedding or failures.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={4} className="mb-4">
-            <Card className="inner-page-card">
-              <Card.Body>
-                <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2rem' }}>
-                  BESS Integration
-                </h3>
-                <p style={{ color: '#D0D0D0', fontSize: '15px' }}>
-                  Peak shaving BESS systems designed to discharge during peak demand hours, protecting facilities from high demand surcharges and price spikes.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={4} className="mb-4">
-            <Card className="inner-page-card">
-              <Card.Body>
-                <h3 style={{ fontFamily: "'Bebas Neue', 'Inter', sans-serif", color: '#00E5FF', fontSize: '2rem' }}>
-                  Grid Substations
-                </h3>
-                <p style={{ color: '#D0D0D0', fontSize: '15px' }}>
-                  Custom substation building, engineering, and maintenance for private high-voltage distribution systems, ensuring maximum safety.
-                </p>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+          </>
+        }
+        image={require('../components/assets/images/commercial_infra.png')}
+      />
+      <AboutVtv 
+        title="Self-Sustaining Power"
+        description="We design and construct self-sustaining industrial microgrids combining high-output battery systems, peaking gas backup engines, and advanced automated switchgear."
+        image={require('../components/assets/images/foundation.png')} 
+      />
+      <TabSec tabs={tabsData} />
+      <MeetOurTeam />
+      <Inquiries />
+    </>
   );
 };

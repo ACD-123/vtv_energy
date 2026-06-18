@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 export const Topbar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" style={{ background: 'rgba(11, 11, 11, 0.95)', borderBottom: '1px solid #4A4A4A', padding: '15px 0' }}>
+      <Navbar collapseOnSelect expand="xl" style={{ background: 'rgba(11, 11, 11, 0.95)', borderBottom: '1px solid #4A4A4A', padding: '15px 0' }}>
         <Container>
           <Navbar.Brand>
             <NavLink to="/">

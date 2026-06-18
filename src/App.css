@@ -129,3 +129,155 @@
   border-top: 1px solid #4A4A4A !important;
   opacity: 1;
 }
+
+.hero-leftCommercial {
+  background: url(./components/assets/banner/commercial.gif) no-repeat;
+  border-radius: 2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 500px;
+  background-size: 100% 100%;
+  padding-bottom: 45px;
+}
+
+.hero-leftCommercial:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(0 0 0 / 55%), rgb(0 0 0 / 55%)), url(./components/assets/banner/commercial.gif);  
+  border-radius: 2px !important;
+  display: flex;
+  height: 500px;
+  background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+  button.navbar-toggler {
+    border: 1px solid white !important;
+  }
+  .navbar {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+  .menunav {
+    background: #000000 !important;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .navbar-collapse {
+    background: #000000;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+}
+
+/* Responsive Typography and Inner Pages Alignment */
+@media only screen and (min-width: 1025px) {
+  .fade-in-up h1, .EnergyLeft h2, .serviceEn h2, .tab-pane h2 {
+    font-size: 60px !important;
+  }
+  .fade-in-up p, .EnergyLeft p, .EnergyLeft .text-white, .serviceEn p, .serviceEn div, .tab-pane p, .tab-pane ul li, .footerMenu ul li, .footerMenu p, .footerContact p {
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .fade-in-up h1, .EnergyLeft h2, .serviceEn h2, .tab-pane h2 {
+    font-size: 30px !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+  }
+  
+  .fade-in-up p, .EnergyLeft p, .EnergyLeft .text-white, .serviceEn p, .serviceEn div, .tab-pane p, .tab-pane ul li, .footerMenu ul li, .footerMenu p, .footerContact p {
+    font-size: 14px !important;
+    text-align: center !important;
+    line-height: 1.6 !important;
+  }
+
+  .fade-in-up h3, .tab-pane h3 {
+    text-align: center !important;
+  }
+
+  /* Inner pages alignment */
+  .EnergyLeft, .EnergyRight, .serviceEn, .tab-pane .col-lg-6, .fade-in-up {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .teamRow {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .teamRow > div {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .teamMember {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .TabSec .nav-tabs {
+    justify-content: center !important;
+    border-bottom: none !important;
+  }
+  
+  /* Ensure images center */
+  img.img-premium, .tab-pane img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  /* Buttons center */
+  .btn-premium, .btn-premium-outline, .btnwork {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 30px !important;
+    display: block !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    padding: 10px 20px !important;
+  }
+  
+  .solutions-tab-btn {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    text-align: center !important;
+  }
+
+  /* Footer centering */
+  .footerSection, .footerMenu, .footerContact, .dert {
+    text-align: center !important;
+  }
+  
+  .footerMenu ul, .footerMenu li, .footerMenu ul li {
+    list-style-type: none !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footerContact p {
+    justify-content: center !important;
+  }
+
+  .socialIcon {
+    justify-content: center !important;
+  }
+
+  /* Fix footer borders on mobile */
+  .border-footer {
+    border-left: none !important;
+    border-top: 1px solid white !important;
+    padding-top: 15px !important;
+    margin-top: 15px !important;
+  }
+}
