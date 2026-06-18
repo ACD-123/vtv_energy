@@ -106,6 +106,7 @@ export const FeatureProjects = () => {
       case "Microgrid Projects":
         return (
           <Swiper
+            className="center-swiper-slides"
             breakpoints={{
               576: {
                 slidesPerView: 1.5,
@@ -114,7 +115,8 @@ export const FeatureProjects = () => {
                 slidesPerView: 2,
               },
             }}
-            loop={true}
+            loop={false}
+            centerInsufficientSlides={true}
             modules={[Navigation, Pagination]}
             spaceBetween={30}
             slidesPerView={1}

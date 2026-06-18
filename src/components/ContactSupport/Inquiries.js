@@ -67,7 +67,7 @@ export const Inquiries = () => {
     <>
       <section id="Contactus" className="InquiriesSectionSupport">
         <div className='container'>
-          <div className='contactUsContact border-gradient inputBg border-gradient-purple'>
+          <div className='contactUsContact border-gradient inputBg border-gradient-purple' style={{ borderRadius: '20px', borderImageSlice: 1 }}>
             <div>
               <div className='contactUsTitleContact'>
                 <h2>For inquiries, Have our sales engineers call you</h2>

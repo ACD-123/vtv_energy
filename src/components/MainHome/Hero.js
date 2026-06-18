@@ -14,7 +14,7 @@ export const Hero = () => {
         playsInline 
         style={{
           position: 'absolute',
-          padding: '60px 0',
+          
           top: '50%',
           left: '50%',
           width: '100%',

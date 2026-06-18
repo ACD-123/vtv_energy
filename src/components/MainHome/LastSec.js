@@ -18,10 +18,10 @@ export const LastSec = () => {
 
   return (
     <>
-      <section className="last-sec">
+      <section className="last-sec" style={{ padding: '60px 0' }}>
         <div className="container">
-          <h2>@VTVENERGY</h2>
-        </div>
+  <h2 className="vtv-heading">@VTVENERGY</h2>
+</div>
         <div className="container-fluid">
         <Slider {...settings}>
           <div className='last-sec-img'>
